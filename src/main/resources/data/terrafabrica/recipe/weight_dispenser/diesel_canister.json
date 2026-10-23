@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:weight_dispenser",
+  "ingredients": [
+    {
+      "item": "terrafabrica:steel_plate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:diesel_canister",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "oil_refining",
+  "fluid_in": {
+    "id": "terrafabrica:diesel",
+    "amount": 12000
+  }
+}

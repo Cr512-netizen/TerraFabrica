@@ -3,11 +3,15 @@ package com.terrafabrica.client;
 import com.terrafabrica.TerraFabrica;
 import com.terrafabrica.client.hud.TFHud;
 import com.terrafabrica.client.screen.MachineScreen;
+import com.terrafabrica.content.TFEntities;
 import com.terrafabrica.content.TFFluids;
 import com.terrafabrica.content.TFMenus;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.renderer.entity.MinecartRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent.RegisterRenderers;
 import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
@@ -31,6 +35,21 @@ public final class TFClientEvents {
     @SubscribeEvent
     public static void registerGuiLayers(RegisterGuiLayersEvent event) {
         event.registerAboveAll(TerraFabrica.id("hud"), TFHud::render);
+    }
+
+    /**
+     * Рендер рельсового транспорта. Переиспользуем ванильную модель вагонетки:
+     * локомотив дополнительно показывает блок-корпус
+     * ({@code steam_casing} / {@code iron_casing}) через
+     * {@code AbstractMinecart#getDefaultDisplayBlockState()}, поэтому отдельные
+     * текстуры и модели для поездов не нужны.
+     */
+    @SubscribeEvent
+    public static void registerEntityRenderers(RegisterRenderers event) {
+        event.registerEntityRenderer(TFEntities.STEAM_LOCOMOTIVE.get(),
+                context -> new MinecartRenderer<>(context, ModelLayers.MINECART));
+        event.registerEntityRenderer(TFEntities.DIESEL_LOCOMOTIVE.get(),
+                context -> new MinecartRenderer<>(context, ModelLayers.MINECART));
     }
 
     /**

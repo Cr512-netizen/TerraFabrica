@@ -5,6 +5,7 @@ import com.terrafabrica.content.TFAttachments;
 import com.terrafabrica.content.TFBlockEntities;
 import com.terrafabrica.content.TFBlocks;
 import com.terrafabrica.content.TFCreativeTabs;
+import com.terrafabrica.content.TFEntities;
 import com.terrafabrica.content.TFFluids;
 import com.terrafabrica.content.TFItems;
 import com.terrafabrica.content.TFMenus;
@@ -17,6 +18,7 @@ import com.terrafabrica.core.research.ResearchTree;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -83,6 +85,8 @@ public final class TerraFabrica {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENTS =
             DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
+            DeferredRegister.create(Registries.ENTITY_TYPE, MODID);
 
     public TerraFabrica(IEventBus modBus, ModContainer container) {
         BLOCKS.register(modBus);
@@ -96,6 +100,7 @@ public final class TerraFabrica {
         FLUID_TYPES.register(modBus);
         CREATIVE_TABS.register(modBus);
         ATTACHMENTS.register(modBus);
+        ENTITY_TYPES.register(modBus);
 
         // Инициализация содержимого (статические поля регистров).
         TFBlocks.init();
@@ -108,6 +113,7 @@ public final class TerraFabrica {
         TFFluids.init();
         TFCreativeTabs.init();
         TFAttachments.init();
+        TFEntities.init();
         ResearchTree.init();
 
         // Конфигурация: серверная (силовые параметры, генерация) и клиентская (HUD, тултипы).

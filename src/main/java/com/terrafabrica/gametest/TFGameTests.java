@@ -3,6 +3,8 @@ package com.terrafabrica.gametest;
 import com.terrafabrica.content.TFAttachments;
 import com.terrafabrica.content.TFBlocks;
 import com.terrafabrica.content.TFItems;
+import com.terrafabrica.content.era1.SteamLocomotiveEntity;
+import com.terrafabrica.content.era2.DieselLocomotiveEntity;
 import com.terrafabrica.content.shared.machine.AbstractMachineBlockEntity;
 import com.terrafabrica.core.research.RecipeGating;
 import com.terrafabrica.core.research.ResearchProgress;
@@ -275,6 +277,114 @@ public class TFGameTests {
         progress.advance("ore_enrichment", 100);
         check(helper, RecipeGating.isUnlocked(player, "ore_enrichment"),
                 "узел не открылся после полного прогресса");
+        helper.succeed();
+    }
+
+    // ------------------------------------------------------------------
+    // Транспорт: локомотивы
+    // ------------------------------------------------------------------
+
+    /** Паровоз: уголь + вода дают тягу, вода котла расходуется. */
+    @GameTest(template = PLATFORM)
+    public void steamLocomotiveBurnsCoalAndWater(GameTestHelper helper) {
+        ServerLevel level = helper.getLevel();
+        BlockPos abs = helper.absolutePos(new BlockPos(2, 2, 2));
+        SteamLocomotiveEntity loco = new SteamLocomotiveEntity(level, abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5);
+        level.addFreshEntity(loco);
+
+        Player driver = helper.makeMockPlayer(GameType.SURVIVAL);
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, new ItemStack(TFItems.STEAM_LOCOMOTIVE.get()));
+        check(helper, loco.tankMb() == 0, "новый паровоз должен быть без воды, а не " + loco.tankMb());
+
+        // Заправка: ведро воды + уголёк.
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, new ItemStack(net.minecraft.world.item.Items.WATER_BUCKET));
+        loco.interact(driver, net.minecraft.world.InteractionHand.MAIN_HAND);
+        check(helper, loco.tankMb() == 1000, "после ведра воды в котле " + loco.tankMb() + " мБ (ожидалось 1000)");
+
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, new ItemStack(net.minecraft.world.item.Items.COAL));
+        loco.interact(driver, net.minecraft.world.InteractionHand.MAIN_HAND);
+
+        int waterBefore = loco.tankMb();
+        helper.runAfterDelay(40, () -> {
+            check(helper, loco.shaftPowerW() > 0.0, "паровоз не даёт мощности: " + loco.debugState());
+            check(helper, loco.tankMb() < waterBefore,
+                    "вода котла не расходуется: " + waterBefore + " → " + loco.tankMb());
+            check(helper, loco.targetSpeed() > 0.0, "целевая скорость нулевая: " + loco.debugState());
+            LOGGER.info("[gametest] паровоз: {}", loco.debugState());
+            loco.discard();
+            helper.succeed();
+        });
+    }
+
+    /** Паровоз без воды: предупреждение, затем взрыв котла. */
+    @GameTest(template = PLATFORM, timeoutTicks = 500)
+    public void steamLocomotiveExplodesWithoutWater(GameTestHelper helper) {
+        ServerLevel level = helper.getLevel();
+        BlockPos abs = helper.absolutePos(new BlockPos(2, 2, 2));
+        SteamLocomotiveEntity loco = new SteamLocomotiveEntity(level, abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5);
+        level.addFreshEntity(loco);
+
+        Player driver = helper.makeMockPlayer(GameType.SURVIVAL);
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, new ItemStack(net.minecraft.world.item.Items.COAL));
+        loco.interact(driver, net.minecraft.world.InteractionHand.MAIN_HAND);
+
+        helper.runAfterDelay(380, () -> {
+            check(helper, loco.isRemoved(),
+                    "сухой котёл обязан взорваться и убрать локомотив: " + loco.debugState());
+            helper.succeed();
+        });
+    }
+
+    /** Тепловоз: канистра дизеля заправляет бак, без топлива тяги нет. */
+    @GameTest(template = PLATFORM)
+    public void dieselLocomotiveUsesCanister(GameTestHelper helper) {
+        ServerLevel level = helper.getLevel();
+        BlockPos abs = helper.absolutePos(new BlockPos(2, 2, 2));
+        DieselLocomotiveEntity loco = new DieselLocomotiveEntity(level, abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5);
+        level.addFreshEntity(loco);
+
+        check(helper, loco.shaftPowerW() == 0.0, "пустой тепловоз не должен давать мощность");
+
+        Player driver = helper.makeMockPlayer(GameType.SURVIVAL);
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,
+                new ItemStack(TFItems.DIESEL_CANISTER.get()));
+        loco.interact(driver, net.minecraft.world.InteractionHand.MAIN_HAND);
+        check(helper, loco.tankMb() == TFItems.DIESEL_CANISTER_MB,
+                "бак тепловоза " + loco.tankMb() + " мБ (ожидалось " + TFItems.DIESEL_CANISTER_MB + ")");
+
+        int before = loco.tankMb();
+        helper.runAfterDelay(40, () -> {
+            check(helper, loco.shaftPowerW() > 0.0, "тепловоз не даёт мощности: " + loco.debugState());
+            check(helper, loco.tankMb() < before, "дизель не расходуется: " + before + " → " + loco.tankMb());
+            LOGGER.info("[gametest] тепловоз: {}", loco.debugState());
+            loco.discard();
+            helper.succeed();
+        });
+    }
+
+    /** Предмет-локомотив ставит сущность на рельсы. */
+    @GameTest(template = PLATFORM)
+    public void locomotiveItemPlacesEntityOnRail(GameTestHelper helper) {
+        ServerLevel level = helper.getLevel();
+        BlockPos rel = new BlockPos(2, 2, 2);
+        helper.setBlock(rel, net.minecraft.world.level.block.Blocks.RAIL);
+
+        Player driver = helper.makeMockPlayer(GameType.SURVIVAL);
+        ItemStack stack = new ItemStack(TFItems.STEAM_LOCOMOTIVE.get());
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, stack);
+        BlockPos abs = helper.absolutePos(rel);
+        net.minecraft.world.phys.BlockHitResult hit = new net.minecraft.world.phys.BlockHitResult(
+                net.minecraft.world.phys.Vec3.atCenterOf(abs), net.minecraft.core.Direction.UP, abs, false);
+
+        var result = stack.useOn(new net.minecraft.world.item.context.UseOnContext(
+                driver, net.minecraft.world.InteractionHand.MAIN_HAND, hit));
+        check(helper, result.consumesAction(), "установка локомотива на рельсы не сработала: " + result);
+        check(helper, stack.getCount() == 0, "предмет не израсходован: " + stack.getCount());
+
+        List<SteamLocomotiveEntity> placed = level.getEntitiesOfClass(SteamLocomotiveEntity.class,
+                new net.minecraft.world.phys.AABB(abs).inflate(2.0));
+        check(helper, placed.size() == 1, "на рельсах сущностей: " + placed.size() + " (ожидалась 1)");
+        placed.forEach(net.minecraft.world.entity.Entity::discard);
         helper.succeed();
     }
 

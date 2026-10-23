@@ -261,12 +261,25 @@ public final class TFItems {
     // Транспорт (предметы-сущности)
     // ------------------------------------------------------------------
 
-    public static final DeferredItem<Item> MINECART = item("minecart");
-    public static final DeferredItem<Item> STEAM_LOCOMOTIVE = item("steam_locomotive");
-    public static final DeferredItem<Item> DIESEL_LOCOMOTIVE = item("diesel_locomotive");
+    public static final DeferredItem<Item> MINECART = item("minecart",
+            () -> new net.minecraft.world.item.MinecartItem(net.minecraft.world.entity.vehicle.AbstractMinecart.Type.RIDEABLE,
+                    new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> STEAM_LOCOMOTIVE = item("steam_locomotive",
+            () -> new com.terrafabrica.content.shared.transport.RailVehicleItem(
+                    com.terrafabrica.content.era1.SteamLocomotiveEntity::new,
+                    new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> DIESEL_LOCOMOTIVE = item("diesel_locomotive",
+            () -> new com.terrafabrica.content.shared.transport.RailVehicleItem(
+                    com.terrafabrica.content.era2.DieselLocomotiveEntity::new,
+                    new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> CAR = item("car");
     public static final DeferredItem<Item> SHIP = item("ship");
     public static final DeferredItem<Item> SUBMARINE = item("submarine");
+
+    /** Канистра дизеля: 12 л топлива, заправляет тепловоз. */
+    public static final int DIESEL_CANISTER_MB = 12_000;
+    public static final DeferredItem<Item> DIESEL_CANISTER = item("diesel_canister",
+            () -> new com.terrafabrica.content.shared.DescribedItem(new Item.Properties().stacksTo(8)));
 
     // ------------------------------------------------------------------
     // Регистрация
