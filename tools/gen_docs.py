@@ -13,6 +13,8 @@ import json
 import os
 import re
 
+from machine_specs import COLUMNS, NOTES, SPECS
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RES = os.path.join(ROOT, "src", "main", "resources")
 DATA = os.path.join(RES, "data", "terrafabrica")
@@ -108,29 +110,71 @@ def gen_machines(recipes, lang):
     lines = [
         "# Машины и оборудование",
         "",
-        "Таблица строится автоматически (`tools/gen_docs.py`) из датапака: число рецептов,",
-        "диапазон энергии и времени цикла, необходимые исследования.",
+        "Файл строится автоматически (`tools/gen_docs.py`) из двух источников:",
         "",
-        "«—» значит, что у машины нет собственных рецептов: она работает как элемент",
-        "конструкции (кабели, изоляторы, опоры) или как часть мультиблока.",
+        "1. **Рецепты** — из датапака: число рецептов, диапазон энергии и времени цикла,",
+        "   необходимые исследования. Это проверяемые данными факты.",
+        "2. **Параметры** — из `tools/machine_specs.py`: мощность, КПД, давление, температура,",
+        "   напряжение, ток, потери, расход топлива, скорость, ёмкость буфера. Значения сняты",
+        "   с констант кода и `TFServerConfig` (в тексте указано, где именно).",
+        "",
+        "Типы блоков:",
+        "",
+        "- **машина с рецептами** — есть свой тип рецептов, таблица рецептов непустая;",
+        "- **источник вращения** — вырабатывает вращение (колесо, ветряк, паровые машины);",
+        "- **трансмиссия** — передаёт вращение (вал, шестерня, ремень, шкив, редуктор);",
+        "- **только способности** — собственных рецептов нет, блок обменивается энергией,",
+        "  теплом или жидкостью через capability (`IEnergyHandler`, `IVoltageSource` и т. п.);",
+        "- **конструкция** — блок без логики: опоры, изоляторы, шпала;",
+        "- **путь** — рельс, по которому движутся сущности.",
+        "",
+        "«—» в таблице параметров значит «не применимо к этому блоку», а не «неизвестно».",
+        "",
+        "Пробелы (что заявлено, но не работает или не проверено) — в [gaps.md](gaps.md).",
         "",
     ]
     total = 0
     for group, machines in GROUPS:
         lines.append(f"## {group}")
         lines.append("")
-        lines.append("| Машина | Название | Рецептов | Энергия цикла | Время цикла | Исследования |")
-        lines.append("| --- | --- | --- | --- | --- | --- |")
-        for machine in machines:
-            info = recipes.get(machine)
-            if info is None:
-                continue
-            total += info["count"]
-            title = lang.get(f"block.terrafabrica.{machine}", machine.replace("_", " "))
-            nodes = ", ".join(f"`{n}`" for n in info["nodes"]) or "—"
-            lines.append(f"| `{machine}` | {title} | {info['count']} | "
-                         f"{fmt_energy(info['energy'])} | {fmt_ticks(info['ticks'])} | {nodes} |")
-        lines.append("")
+        rows = [(m, recipes[m]) for m in machines if m in recipes]
+        if rows:
+            lines.append("| Машина | Название | Тип | Рецептов | Энергия цикла | Время цикла | Исследования |")
+            lines.append("| --- | --- | --- | --- | --- | --- | --- |")
+            for machine, info in rows:
+                total += info["count"]
+                title = lang.get(f"block.terrafabrica.{machine}", machine.replace("_", " "))
+                nodes = ", ".join(f"`{n}`" for n in info["nodes"]) or "—"
+                lines.append(f"| `{machine}` | {title} | машина с рецептами | {info['count']} | "
+                             f"{fmt_energy(info['energy'])} | {fmt_ticks(info['ticks'])} | {nodes} |")
+            lines.append("")
+
+        spec_ids = [m for m in machines if m in SPECS]
+        if spec_ids:
+            columns = COLUMNS[group]
+            header = "| Машина | Название | Тип | " + " | ".join(columns) + " |"
+            lines.append(header)
+            lines.append("| --- | --- | --- |" + " --- |" * len(columns))
+            for machine in spec_ids:
+                kind, cells = SPECS[machine]
+                title = lang.get(f"block.terrafabrica.{machine}", machine.replace("_", " "))
+                if len(cells) != len(columns):
+                    raise ValueError(
+                        f"{group}/{machine}: {len(cells)} значений на {len(columns)} колонок")
+                lines.append(f"| `{machine}` | {title} | {kind} | " + " | ".join(cells) + " |")
+            lines.append("")
+
+        note = NOTES.get(group)
+        if note:
+            lines.extend(note)
+            lines.append("")
+
+        missing = [m for m in machines if m not in recipes and m not in SPECS]
+        if missing:
+            lines.append("Без рецептов и без спецификации (проверить): "
+                         + ", ".join(f"`{m}`" for m in missing))
+            lines.append("")
+
     lines.append(f"Всего рецептов в перечисленных машинах: **{total}**.")
     lines.append("")
     write(os.path.join(DOCS, "machines.md"), lines)
