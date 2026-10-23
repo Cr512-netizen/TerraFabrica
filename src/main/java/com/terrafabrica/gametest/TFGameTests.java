@@ -388,6 +388,40 @@ public class TFGameTests {
         helper.succeed();
     }
 
+    /** Локомотив с топливом трогается с места и едет по рельсу мода. */
+    @GameTest(template = PLATFORM, timeoutTicks = 200)
+    public void steamLocomotiveTravelsOnModRail(GameTestHelper helper) {
+        ServerLevel level = helper.getLevel();
+        // Платформа 5×5×4: рельс кладём по оси X на высоте 2, z = 2.
+        for (int x = 0; x < 5; x++) {
+            helper.setBlock(new BlockPos(x, 2, 2), TFBlocks.RAIL.get().defaultBlockState()
+                    .setValue(net.minecraft.world.level.block.RailBlock.SHAPE,
+                            net.minecraft.world.level.block.state.properties.RailShape.EAST_WEST));
+        }
+        BlockPos abs = helper.absolutePos(new BlockPos(1, 2, 2));
+        SteamLocomotiveEntity loco = new SteamLocomotiveEntity(level, abs.getX() + 0.5, abs.getY(), abs.getZ() + 0.5);
+        loco.setYRot(-90.0F); // смотрит в +X
+        level.addFreshEntity(loco);
+
+        Player driver = helper.makeMockPlayer(GameType.SURVIVAL);
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,
+                new ItemStack(net.minecraft.world.item.Items.WATER_BUCKET));
+        loco.interact(driver, net.minecraft.world.InteractionHand.MAIN_HAND);
+        driver.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,
+                new ItemStack(net.minecraft.world.item.Items.COAL));
+        loco.interact(driver, net.minecraft.world.InteractionHand.MAIN_HAND);
+
+        double startX = loco.getX();
+        helper.runAfterDelay(30, () -> {
+            double moved = loco.getX() - startX;
+            check(helper, moved > 0.15,
+                    "локомотив не тронулся с места на рельсе мода: сдвиг " + moved + ", " + loco.debugState());
+            LOGGER.info("[gametest] локомотив на рельсе мода: сдвиг {} блоков, {}", moved, loco.debugState());
+            loco.discard();
+            helper.succeed();
+        });
+    }
+
     // ------------------------------------------------------------------
     // Вспомогательное
     // ------------------------------------------------------------------

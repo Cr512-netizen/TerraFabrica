@@ -281,17 +281,56 @@ public abstract class AbstractLocomotiveEntity extends AbstractMinecart {
         if (!isActive()) {
             return;
         }
+        double target = targetSpeed();
+        if (target <= 0.0) {
+            return;
+        }
         Vec3 motion = this.getDeltaMovement();
         double horizontal = motion.horizontalDistanceSqr();
         if (horizontal < 1.0E-6) {
+            // Стоящий локомотив сам не поедет: ванильная вагонетка разгоняется
+            // только толчком. Даём начальный импульс вдоль рельса в ту сторону,
+            // куда смотрит локомотив.
+            Vec3 axis = trackAxis(state);
+            if (axis == null) {
+                return;
+            }
+            Vec3 forward = Vec3.directionFromRotation(0.0F, this.getYRot());
+            double dot = axis.x * forward.x + axis.z * forward.z;
+            double sign = dot < 0.0 ? -1.0 : 1.0;
+            double start = Math.min(target, 0.06);
+            this.setDeltaMovement(axis.x * sign * start, motion.y, axis.z * sign * start);
             return;
         }
         double speed = Math.sqrt(horizontal);
-        double target = targetSpeed();
         if (speed < target) {
             double scale = (target - speed) / speed;
             this.setDeltaMovement(motion.x + motion.x * scale, motion.y, motion.z + motion.z * scale);
         }
+    }
+
+    /**
+     * Горизонтальное направление рельса (единичный вектор) или {@code null},
+     * если блок не рельс. Уклон учитывается как горизонтальное направление
+     * подъёма: вертикаль добавляет ванильная физика вагонетки.
+     */
+    private static Vec3 trackAxis(BlockState state) {
+        if (!(state.getBlock() instanceof net.minecraft.world.level.block.RailBlock)) {
+            return null;
+        }
+        net.minecraft.world.level.block.state.properties.RailShape shape =
+                state.getValue(net.minecraft.world.level.block.RailBlock.SHAPE);
+        Vec3 axis = switch (shape) {
+            case NORTH_SOUTH, ASCENDING_SOUTH -> new Vec3(0.0, 0.0, 1.0);
+            case ASCENDING_NORTH -> new Vec3(0.0, 0.0, -1.0);
+            case EAST_WEST, ASCENDING_EAST -> new Vec3(1.0, 0.0, 0.0);
+            case ASCENDING_WEST -> new Vec3(-1.0, 0.0, 0.0);
+            case NORTH_EAST -> new Vec3(1.0, 0.0, -1.0);
+            case SOUTH_EAST -> new Vec3(1.0, 0.0, 1.0);
+            case SOUTH_WEST -> new Vec3(-1.0, 0.0, 1.0);
+            case NORTH_WEST -> new Vec3(-1.0, 0.0, -1.0);
+        };
+        return axis.normalize();
     }
 
     /** Целевая скорость из полезной мощности, блоков за тик. */
