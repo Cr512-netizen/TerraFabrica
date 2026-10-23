@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:absorber",
+  "ingredients": [],
+  "results": [],
+  "energy": 0,
+  "ticks": 600,
+  "research": "chemistry_sulfuric",
+  "fluid_in": {
+    "id": "terrafabrica:sulfuric_acid_dilute",
+    "amount": 1000
+  },
+  "fluid_out": {
+    "id": "terrafabrica:sulfuric_acid",
+    "amount": 780
+  }
+}

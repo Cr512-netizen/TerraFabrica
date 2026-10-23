@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/radio"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/radio",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/radio",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/radio",
+      "y": 270
+    }
+  }
+}

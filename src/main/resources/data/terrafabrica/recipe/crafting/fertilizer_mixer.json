@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IPI",
+    "IVI",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    },
+    "V": {
+      "item": "terrafabrica:valve"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:fertilizer_mixer",
+    "count": 1
+  },
+  "research": "fertilizers"
+}

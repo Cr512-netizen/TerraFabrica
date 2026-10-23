@@ -1,0 +1,13 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:bronze_ingot"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:shaft",
+    "count": 1
+  },
+  "research": "transmission"
+}

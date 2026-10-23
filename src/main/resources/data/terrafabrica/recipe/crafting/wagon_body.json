@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IPI",
+    "IPI",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "P": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:wagon_body",
+    "count": 1
+  },
+  "research": "transport_minecart"
+}

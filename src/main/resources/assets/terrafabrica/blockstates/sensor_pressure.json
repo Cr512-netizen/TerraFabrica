@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/sensor_pressure"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/sensor_pressure",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/sensor_pressure",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/sensor_pressure",
+      "y": 270
+    }
+  }
+}

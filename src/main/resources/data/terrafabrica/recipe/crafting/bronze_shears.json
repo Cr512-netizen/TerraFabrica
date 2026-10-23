@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    " B",
+    "B "
+  ],
+  "key": {
+    "B": {
+      "item": "terrafabrica:bronze_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:bronze_shears",
+    "count": 1
+  },
+  "research": "bronze_metallurgy"
+}

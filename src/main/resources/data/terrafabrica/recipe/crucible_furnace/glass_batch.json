@@ -1,0 +1,33 @@
+{
+  "type": "terrafabrica:crucible_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "terrafabrica:soda_ash"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:glass",
+      "count": 3
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "chemistry_soda",
+  "min_temperature": 1773.0,
+  "counts": [
+    1,
+    1,
+    1,
+    1
+  ]
+}

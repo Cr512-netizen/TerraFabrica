@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    {
+      "item": "terrafabrica:belt"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:pulley",
+    "count": 1
+  },
+  "research": "transmission"
+}

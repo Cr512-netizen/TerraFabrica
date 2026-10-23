@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    " W ",
+    "WBW",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "item": "terrafabrica:wheel"
+    },
+    "B": {
+      "item": "terrafabrica:wagon_body"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:minecart",
+    "count": 1
+  },
+  "research": "transport_minecart"
+}

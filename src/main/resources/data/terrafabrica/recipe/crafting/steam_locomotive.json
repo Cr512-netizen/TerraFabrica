@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "BWB",
+    "CWC",
+    "BWB"
+  ],
+  "key": {
+    "B": {
+      "item": "terrafabrica:boiler_part"
+    },
+    "W": {
+      "item": "terrafabrica:wheel"
+    },
+    "C": {
+      "item": "terrafabrica:cylinder"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:steam_locomotive",
+    "count": 1
+  },
+  "research": "transport_locomotive"
+}

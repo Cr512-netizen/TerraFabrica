@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "II",
+    "II",
+    " S"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:iron_file",
+    "count": 1
+  },
+  "research": "iron_metallurgy"
+}

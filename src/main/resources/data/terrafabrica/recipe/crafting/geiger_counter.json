@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IWI",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "terrafabrica:copper_wire"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:geiger_counter",
+    "count": 1
+  },
+  "research": "era2_transition"
+}

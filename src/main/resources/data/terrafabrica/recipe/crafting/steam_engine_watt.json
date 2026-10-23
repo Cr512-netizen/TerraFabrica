@@ -1,0 +1,30 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "SBS",
+    "CYS",
+    "SGS"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:steam_casing"
+    },
+    "B": {
+      "item": "terrafabrica:boiler_part"
+    },
+    "C": {
+      "item": "terrafabrica:cylinder"
+    },
+    "Y": {
+      "item": "terrafabrica:condenser"
+    },
+    "G": {
+      "item": "terrafabrica:governor"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:steam_engine_watt",
+    "count": 1
+  },
+  "research": "steam_watt"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:iron_gear"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:gear",
+    "count": 1
+  },
+  "research": "transmission"
+}

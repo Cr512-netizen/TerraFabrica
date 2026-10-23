@@ -1,0 +1,40 @@
+{
+  "type": "terrafabrica:bessemer_converter",
+  "ingredients": [
+    {
+      "item": "terrafabrica:pig_iron_ingot"
+    },
+    {
+      "item": "terrafabrica:pig_iron_ingot"
+    },
+    {
+      "item": "terrafabrica:pig_iron_ingot"
+    },
+    {
+      "item": "terrafabrica:pig_iron_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:steel_ingot",
+      "count": 4
+    },
+    {
+      "id": "terrafabrica:slag",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 21600,
+  "research": "bessemer",
+  "fluid_in": {
+    "id": "terrafabrica:oxygen",
+    "amount": 2000
+  },
+  "counts": [
+    3,
+    3,
+    3,
+    1
+  ]
+}

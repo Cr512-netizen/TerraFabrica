@@ -1,0 +1,30 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IFI",
+    "WSW",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "F": {
+      "item": "terrafabrica:flywheel"
+    },
+    "W": {
+      "item": "terrafabrica:iron_rod"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    },
+    "G": {
+      "item": "terrafabrica:iron_gear"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:rolling_mill",
+    "count": 1
+  },
+  "research": "machine_tools_rolling"
+}

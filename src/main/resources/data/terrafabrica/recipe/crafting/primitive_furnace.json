@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "CCC",
+    "CgC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "g": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:primitive_furnace",
+    "count": 1
+  },
+  "research": "stone_working"
+}

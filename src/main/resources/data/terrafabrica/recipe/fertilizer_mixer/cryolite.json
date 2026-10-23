@@ -1,0 +1,26 @@
+{
+  "type": "terrafabrica:fertilizer_mixer",
+  "ingredients": [
+    {
+      "item": "terrafabrica:fluorite_concentrate"
+    },
+    {
+      "item": "terrafabrica:fluorite_concentrate"
+    },
+    {
+      "item": "terrafabrica:soda_ash"
+    },
+    {
+      "item": "terrafabrica:bauxite_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:cryolite",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 400,
+  "research": "aluminum"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/gas_turbine"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/gas_turbine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/gas_turbine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/gas_turbine",
+      "y": 270
+    }
+  }
+}

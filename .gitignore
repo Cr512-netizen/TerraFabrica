@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Generated data
+src/generated/resources/.cache/
+
+# Каталог запуска (dev-клиент/сервер): мир, логи, крэш-репорты
+run/*
+!run/eula.txt
+!run/server.properties

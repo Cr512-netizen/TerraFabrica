@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    " I ",
+    "ISI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:rotor",
+    "count": 1
+  },
+  "research": "electric_generator"
+}

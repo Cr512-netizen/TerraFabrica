@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:bauxite_porode_poor",
+    "terrafabrica:deepslate_bauxite_porode_poor",
+    "terrafabrica:bauxite_porode_normal",
+    "terrafabrica:deepslate_bauxite_porode_normal",
+    "terrafabrica:bauxite_porode_rich",
+    "terrafabrica:deepslate_bauxite_porode_rich"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/air_separation_unit"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/air_separation_unit",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/air_separation_unit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/air_separation_unit",
+      "y": 270
+    }
+  }
+}

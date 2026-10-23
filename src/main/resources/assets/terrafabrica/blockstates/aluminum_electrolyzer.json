@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/aluminum_electrolyzer"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/aluminum_electrolyzer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/aluminum_electrolyzer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/aluminum_electrolyzer",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "PWP",
+    "MWM",
+    "PWP"
+  ],
+  "key": {
+    "P": {
+      "item": "terrafabrica:piston"
+    },
+    "W": {
+      "item": "terrafabrica:wheel"
+    },
+    "M": {
+      "item": "terrafabrica:electric_motor"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:diesel_locomotive",
+    "count": 1
+  },
+  "research": "diesel_locomotive"
+}

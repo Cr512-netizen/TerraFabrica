@@ -1,0 +1,26 @@
+{
+  "type": "terrafabrica:coke_oven",
+  "ingredients": [
+    {
+      "item": "terrafabrica:coal_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:coke",
+      "count": 1
+    },
+    {
+      "id": "terrafabrica:coal_tar",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 900,
+  "research": "coke_making",
+  "fluid_out": {
+    "id": "terrafabrica:coal_gas",
+    "amount": 500
+  },
+  "min_temperature": 1273.0
+}

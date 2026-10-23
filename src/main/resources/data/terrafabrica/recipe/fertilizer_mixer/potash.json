@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:fertilizer_mixer",
+  "ingredients": [
+    {
+      "item": "terrafabrica:sylvite_concentrate"
+    },
+    {
+      "item": "terrafabrica:sylvite_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:potash_fertilizer",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "fertilizers"
+}

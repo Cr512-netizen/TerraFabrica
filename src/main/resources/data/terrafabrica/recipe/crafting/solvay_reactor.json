@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RGR",
+    "RPR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:reactor_casing"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:solvay_reactor",
+    "count": 1
+  },
+  "research": "chemistry_soda"
+}

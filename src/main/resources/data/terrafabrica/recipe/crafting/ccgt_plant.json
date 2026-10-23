@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "SRS",
+    "SGS",
+    "SRS"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:steam_casing"
+    },
+    "R": {
+      "item": "terrafabrica:reactor_casing"
+    },
+    "G": {
+      "item": "terrafabrica:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:ccgt_plant",
+    "count": 1
+  },
+  "research": "ccgt"
+}

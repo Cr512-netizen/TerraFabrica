@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IPI",
+    "GPG",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:steel_plate"
+    },
+    "P": {
+      "item": "terrafabrica:piston"
+    },
+    "G": {
+      "item": "terrafabrica:iron_gear"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:wire_drawing_machine",
+    "count": 1
+  },
+  "research": "wire_drawing"
+}

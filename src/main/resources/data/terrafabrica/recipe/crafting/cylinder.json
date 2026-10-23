@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "I I",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:cylinder",
+    "count": 1
+  },
+  "research": "iron_metallurgy"
+}

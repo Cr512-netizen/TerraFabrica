@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:claystone_porode_poor",
+    "terrafabrica:deepslate_claystone_porode_poor",
+    "terrafabrica:claystone_porode_normal",
+    "terrafabrica:deepslate_claystone_porode_normal",
+    "terrafabrica:claystone_porode_rich",
+    "terrafabrica:deepslate_claystone_porode_rich"
+  ]
+}

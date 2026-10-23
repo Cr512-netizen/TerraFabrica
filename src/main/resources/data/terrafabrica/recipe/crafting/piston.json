@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "III",
+    "IRI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "terrafabrica:iron_rod"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:piston",
+    "count": 1
+  },
+  "research": "machine_tools_lathe"
+}

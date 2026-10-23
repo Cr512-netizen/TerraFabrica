@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/milling_machine"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/milling_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/milling_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/milling_machine",
+      "y": 270
+    }
+  }
+}

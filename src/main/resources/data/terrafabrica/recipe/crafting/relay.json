@@ -1,0 +1,26 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IPI",
+    "WCW"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "P": {
+      "item": "terrafabrica:piston"
+    },
+    "W": {
+      "item": "terrafabrica:copper_wire"
+    },
+    "C": {
+      "item": "terrafabrica:copper_coil"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:relay",
+    "count": 1
+  },
+  "research": "power_network"
+}

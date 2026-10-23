@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "SFS",
+    "SRS",
+    "SFS"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:steam_casing"
+    },
+    "F": {
+      "item": "terrafabrica:flywheel"
+    },
+    "R": {
+      "item": "terrafabrica:rotor"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:steam_turbine",
+    "count": 1
+  },
+  "research": "steam_turbine"
+}

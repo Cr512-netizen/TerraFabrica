@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:bloomery",
+  "ingredients": [
+    {
+      "item": "terrafabrica:copper_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:copper_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "copper_metallurgy",
+  "min_temperature": 1357.0
+}

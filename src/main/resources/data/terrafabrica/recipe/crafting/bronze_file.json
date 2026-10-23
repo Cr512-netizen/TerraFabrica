@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "BB",
+    "BB",
+    " S"
+  ],
+  "key": {
+    "B": {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:bronze_file",
+    "count": 1
+  },
+  "research": "bronze_metallurgy"
+}

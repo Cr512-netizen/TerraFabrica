@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/water_electrolyzer"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/water_electrolyzer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/water_electrolyzer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/water_electrolyzer",
+      "y": 270
+    }
+  }
+}

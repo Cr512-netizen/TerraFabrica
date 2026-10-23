@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "G",
+    "G",
+    "G"
+  ],
+  "key": {
+    "G": {
+      "item": "terrafabrica:graphite_concentrate"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:graphite_electrode",
+    "count": 1
+  },
+  "research": "water_electrolysis"
+}

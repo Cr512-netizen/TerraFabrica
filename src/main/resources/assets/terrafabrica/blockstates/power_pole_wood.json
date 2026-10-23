@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/power_pole_wood"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/power_pole_wood",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/power_pole_wood",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/power_pole_wood",
+      "y": 270
+    }
+  }
+}

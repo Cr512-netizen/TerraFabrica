@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/ccgt_plant"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/ccgt_plant",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/ccgt_plant",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/ccgt_plant",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:crucible_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:glass"
+    },
+    {
+      "item": "minecraft:glass"
+    },
+    {
+      "item": "terrafabrica:magnesite_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:heat_resistant_glass",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "chemistry_special_glass",
+  "min_temperature": 1773.0
+}

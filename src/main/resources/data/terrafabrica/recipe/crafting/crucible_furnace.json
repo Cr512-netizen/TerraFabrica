@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RB",
+    "RC"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "B": {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:crucible_furnace",
+    "count": 1
+  },
+  "research": "bronze_metallurgy"
+}

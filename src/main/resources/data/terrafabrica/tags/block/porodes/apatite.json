@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:apatite_porode_poor",
+    "terrafabrica:deepslate_apatite_porode_poor",
+    "terrafabrica:apatite_porode_normal",
+    "terrafabrica:deepslate_apatite_porode_normal",
+    "terrafabrica:apatite_porode_rich",
+    "terrafabrica:deepslate_apatite_porode_rich"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "I ",
+    "GR"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "terrafabrica:bronze_gear"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:tachometer",
+    "count": 1
+  },
+  "research": "transmission"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/cable_aluminum"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/cable_aluminum",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/cable_aluminum",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/cable_aluminum",
+      "y": 270
+    }
+  }
+}

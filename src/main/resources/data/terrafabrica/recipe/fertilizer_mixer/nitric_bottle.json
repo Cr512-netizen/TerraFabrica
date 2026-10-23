@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:fertilizer_mixer",
+  "ingredients": [],
+  "results": [
+    {
+      "id": "terrafabrica:nitric_acid_bottle",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 100,
+  "research": "fertilizers",
+  "fluid_in": {
+    "id": "terrafabrica:nitric_acid",
+    "amount": 250
+  }
+}

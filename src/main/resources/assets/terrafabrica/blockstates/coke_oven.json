@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/coke_oven"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/coke_oven",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/coke_oven",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/coke_oven",
+      "y": 270
+    }
+  }
+}

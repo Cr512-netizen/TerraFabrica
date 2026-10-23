@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:sulfur_porode_poor",
+    "terrafabrica:deepslate_sulfur_porode_poor",
+    "terrafabrica:sulfur_porode_normal",
+    "terrafabrica:deepslate_sulfur_porode_normal",
+    "terrafabrica:sulfur_porode_rich",
+    "terrafabrica:deepslate_sulfur_porode_rich"
+  ]
+}

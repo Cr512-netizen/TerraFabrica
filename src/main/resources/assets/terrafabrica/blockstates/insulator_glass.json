@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/insulator_glass"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/insulator_glass",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/insulator_glass",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/insulator_glass",
+      "y": 270
+    }
+  }
+}

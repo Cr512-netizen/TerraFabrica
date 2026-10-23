@@ -1,0 +1,25 @@
+{
+  "type": "terrafabrica:bloomery",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "terrafabrica:tin_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:bronze_ingot",
+      "count": 10
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "bronze_metallurgy",
+  "min_temperature": 1223.0,
+  "counts": [
+    9,
+    1
+  ]
+}

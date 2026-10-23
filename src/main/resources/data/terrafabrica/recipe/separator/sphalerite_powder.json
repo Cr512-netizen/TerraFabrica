@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:separator",
+  "ingredients": [
+    {
+      "item": "terrafabrica:sphalerite_powder"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:sphalerite_concentrate",
+      "count": 1
+    }
+  ],
+  "energy": 50000,
+  "ticks": 100,
+  "research": "ore_enrichment",
+  "counts": [
+    2
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RPR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:blast_furnace",
+    "count": 1
+  },
+  "research": "blast_furnace_coke"
+}

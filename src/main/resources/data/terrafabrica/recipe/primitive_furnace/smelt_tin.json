@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:primitive_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:tin_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:tin_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "ore_enrichment",
+  "min_temperature": 505.0
+}

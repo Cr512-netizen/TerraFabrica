@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:fertilizer_mixer",
+  "ingredients": [
+    {
+      "item": "terrafabrica:apatite_concentrate"
+    },
+    {
+      "item": "terrafabrica:apatite_concentrate"
+    },
+    {
+      "item": "terrafabrica:sulfuric_acid_bottle"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:superphosphate",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "fertilizers"
+}

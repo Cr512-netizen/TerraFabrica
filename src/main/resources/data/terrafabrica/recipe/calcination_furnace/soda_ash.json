@@ -1,0 +1,22 @@
+{
+  "type": "terrafabrica:calcination_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:sodium_bicarbonate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:soda_ash",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 400,
+  "research": "chemistry_soda",
+  "fluid_out": {
+    "id": "terrafabrica:carbon_dioxide",
+    "amount": 500
+  },
+  "min_temperature": 473.0
+}

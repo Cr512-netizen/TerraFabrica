@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:power_hammer",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:iron_plate",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "machine_tools_hammer"
+}

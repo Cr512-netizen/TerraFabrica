@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "B B",
+    "B B",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:bronze_tongs",
+    "count": 1
+  },
+  "research": "bronze_metallurgy"
+}

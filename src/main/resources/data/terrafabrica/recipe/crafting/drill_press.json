@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "I I",
+    "GSG",
+    " F "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "terrafabrica:iron_gear"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    },
+    "F": {
+      "item": "terrafabrica:machine_frame"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:drill_press",
+    "count": 1
+  },
+  "research": "machine_tools_drill"
+}

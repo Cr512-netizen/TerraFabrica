@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/telephone"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/telephone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/telephone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/telephone",
+      "y": 270
+    }
+  }
+}

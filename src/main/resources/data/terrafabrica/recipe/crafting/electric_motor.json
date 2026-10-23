@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    " C ",
+    "IRI",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "terrafabrica:copper_coil"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "terrafabrica:rotor"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:electric_motor",
+    "count": 1
+  },
+  "research": "electric_motor"
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:pyrite_porode_poor",
+    "terrafabrica:deepslate_pyrite_porode_poor",
+    "terrafabrica:pyrite_porode_normal",
+    "terrafabrica:deepslate_pyrite_porode_normal",
+    "terrafabrica:pyrite_porode_rich",
+    "terrafabrica:deepslate_pyrite_porode_rich"
+  ]
+}

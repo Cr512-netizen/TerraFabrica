@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:lathe",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:shaft",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "machine_tools_lathe"
+}

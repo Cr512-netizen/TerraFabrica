@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IM",
+    "IS"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "terrafabrica:carbon_microphone"
+    },
+    "S": {
+      "item": "terrafabrica:speaker"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:telephone",
+    "count": 1
+  },
+  "research": "telephone"
+}

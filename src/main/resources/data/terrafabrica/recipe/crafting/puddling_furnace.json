@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RSR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:puddling_furnace",
+    "count": 1
+  },
+  "research": "iron_metallurgy"
+}

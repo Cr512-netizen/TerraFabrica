@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:hematite_powder"
+    },
+    {
+      "item": "terrafabrica:magnetite_concentrate"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:iron_catalyst",
+    "count": 1
+  },
+  "research": "ammonia"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RVR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:reactor_casing"
+    },
+    "V": {
+      "item": "terrafabrica:valve"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:bessemer_converter",
+    "count": 1
+  },
+  "research": "bessemer"
+}

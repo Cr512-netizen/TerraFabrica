@@ -1,0 +1,22 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    {
+      "item": "terrafabrica:bronze_ingot"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:bronze_gear",
+    "count": 1
+  },
+  "research": "bronze_metallurgy"
+}

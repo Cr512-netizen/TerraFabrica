@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:crucible_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:glass"
+    },
+    {
+      "item": "minecraft:glass"
+    },
+    {
+      "item": "terrafabrica:lead_ingot"
+    },
+    {
+      "item": "terrafabrica:soda_ash"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:optical_glass",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "chemistry_special_glass",
+  "min_temperature": 1773.0
+}

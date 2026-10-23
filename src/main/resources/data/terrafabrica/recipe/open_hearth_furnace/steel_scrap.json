@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:open_hearth_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "terrafabrica:hematite_concentrate"
+    },
+    {
+      "item": "terrafabrica:limestone_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:steel_ingot",
+      "count": 3
+    }
+  ],
+  "energy": 0,
+  "ticks": 1200,
+  "research": "open_hearth",
+  "min_temperature": 1973.0
+}

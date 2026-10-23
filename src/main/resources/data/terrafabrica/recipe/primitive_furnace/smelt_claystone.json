@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:primitive_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:claystone_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:clay_ball",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 400,
+  "research": "ore_enrichment",
+  "min_temperature": 400.0
+}

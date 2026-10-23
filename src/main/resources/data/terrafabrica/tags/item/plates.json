@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:copper_plate",
+    "terrafabrica:iron_plate",
+    "terrafabrica:steel_plate",
+    "terrafabrica:aluminum_plate",
+    "terrafabrica:tin_plate",
+    "terrafabrica:bronze_plate"
+  ]
+}

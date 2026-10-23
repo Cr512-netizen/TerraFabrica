@@ -1,0 +1,28 @@
+{
+  "type": "terrafabrica:weight_dispenser",
+  "ingredients": [
+    {
+      "item": "terrafabrica:titanium_ingot"
+    },
+    {
+      "item": "terrafabrica:aluminum_ingot"
+    },
+    {
+      "item": "terrafabrica:vanadium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:titanium_alloy_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "electric_arc_furnace",
+  "counts": [
+    90,
+    6,
+    4
+  ]
+}

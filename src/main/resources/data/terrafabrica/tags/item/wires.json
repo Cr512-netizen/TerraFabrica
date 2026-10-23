@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:copper_wire",
+    "terrafabrica:aluminum_wire",
+    "terrafabrica:steel_wire"
+  ]
+}

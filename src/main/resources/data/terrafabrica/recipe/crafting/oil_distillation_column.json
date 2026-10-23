@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "SGS",
+    "SPS",
+    "SGS"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:steam_casing"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:oil_distillation_column",
+    "count": 1
+  },
+  "research": "oil_refining"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "TTT",
+    "SGS"
+  ],
+  "key": {
+    "T": {
+      "item": "terrafabrica:steam_turbine"
+    },
+    "S": {
+      "item": "terrafabrica:steel_plate"
+    },
+    "G": {
+      "item": "terrafabrica:gearbox"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:ship",
+    "count": 1
+  },
+  "research": "ships"
+}

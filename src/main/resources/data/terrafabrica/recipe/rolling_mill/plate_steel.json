@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:rolling_mill",
+  "ingredients": [
+    {
+      "item": "terrafabrica:steel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:steel_plate",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 100,
+  "research": "machine_tools_rolling",
+  "min_temperature": 1173.0
+}

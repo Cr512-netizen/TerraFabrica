@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/pyrite_roaster"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/pyrite_roaster",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/pyrite_roaster",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/pyrite_roaster",
+      "y": 270
+    }
+  }
+}

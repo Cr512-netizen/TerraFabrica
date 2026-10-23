@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "LGL",
+    "LIL",
+    "LGL"
+  ],
+  "key": {
+    "L": {
+      "item": "terrafabrica:lead_casing"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:lead_chamber",
+    "count": 1
+  },
+  "research": "chemistry_sulfuric"
+}

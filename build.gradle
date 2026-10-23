@@ -1,0 +1,95 @@
+plugins {
+    id 'java-library'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+// Java 21 toolchain. Локальный JDK 21 используется, скачивание не требуется.
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+// ---------------------------------------------------------------------------
+// NeoForge 1.21.1 через ModDevGradle.
+// ВАЖНО: сборка рассчитана на офлайн-режим (`--offline`) — все артефакты
+// NeoForge/Minecraft уже лежат в кэше Gradle. Сетевые репозитории оставлены
+// для обычной (онлайновой) сборки у других разработчиков.
+// ---------------------------------------------------------------------------
+neoForge {
+    version = project.neo_version
+
+    // Запуски для ручной проверки в игре.
+    runs {
+        client {
+            client()
+        }
+        // Автосмоук экранов: открывает руководство, древо исследований и GUI машины
+        // в живом клиенте, снимает run/screenshots/terrafabrica_*.png и выходит (см.
+        // client/GuiSmokeHook.java и docs/testing.md). Мир run/saves/tfsmoke хук
+        // открывает сам: машинный экран без игрока валится в тике, потому что
+        // AbstractContainerScreen читает minecraft.player.isAlive().
+        clientSmoke {
+            client()
+            systemProperty 'terrafabrica.guismoke', 'true'
+        }
+        server {
+            server()
+            programArgument '--nogui'
+        }
+        data {
+            data()
+            programArguments.addAll '--mod', mod_id, '--all',
+                    '--output', file('src/generated/resources/').getAbsolutePath(),
+                    '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+        gameTestServer {
+            type = 'gameTestServer'
+            systemProperty 'neoforge.enabledGameTestNamespaces', mod_id
+        }
+    }
+
+    mods {
+        terrafabrica {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+// Датаген-выхлоп подключается как ресурсы мода.
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    // Чистые JVM-тесты SI-API (без запуска игры).
+    // Версии взяты из офлайн-кэша Gradle: сеть в этом окружении недоступна,
+    // 5.10.2 здесь нет, а 5.11.4 уже лежит в кэше (её тянет сам NeoForge).
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-Xlint:-deprecation' << '-Xmaxerrs' << '2000'
+}
+
+// Javadoc публичного API в docs/api.
+tasks.register('apiJavadocs', Javadoc) {
+    source = sourceSets.main.allJava
+    include 'com/terrafabrica/core/api/**'
+    classpath = sourceSets.main.compileClasspath
+    destinationDir = file('docs/api')
+}

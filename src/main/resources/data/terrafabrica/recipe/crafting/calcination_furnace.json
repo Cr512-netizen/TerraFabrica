@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RR",
+    "CR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:calcination_furnace",
+    "count": 1
+  },
+  "research": "chemistry_soda"
+}

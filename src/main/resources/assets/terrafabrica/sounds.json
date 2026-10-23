@@ -1,0 +1,146 @@
+{
+  "machine_generic": {
+    "sounds": [
+      {
+        "name": "minecraft:tile/piston/out"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.machine_generic"
+  },
+  "crusher_work": {
+    "sounds": [
+      {
+        "name": "minecraft:block/grindstone/grindstone1"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.crusher_work"
+  },
+  "lathe_work": {
+    "sounds": [
+      {
+        "name": "minecraft:block/smithing_table/smithing_table1"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.lathe_work"
+  },
+  "hammer_work": {
+    "sounds": [
+      {
+        "name": "minecraft:random/anvil_use"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.hammer_work"
+  },
+  "steam_engine": {
+    "sounds": [
+      {
+        "name": "minecraft:block/campfire/crackle1"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.steam_engine"
+  },
+  "turbine": {
+    "sounds": [
+      {
+        "name": "minecraft:ambient/nether/soulsand_valley/wind1"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.turbine"
+  },
+  "generator": {
+    "sounds": [
+      {
+        "name": "minecraft:block/beacon/ambient"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.generator"
+  },
+  "chemical_bubble": {
+    "sounds": [
+      {
+        "name": "minecraft:ambient/underwater/additions/crackles1"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.chemical_bubble"
+  },
+  "locomotive_steam": {
+    "sounds": [
+      {
+        "name": "minecraft:block/blastfurnace/blastfurnace1"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.locomotive_steam"
+  },
+  "telegraph_click": {
+    "sounds": [
+      {
+        "name": "minecraft:random/click"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.telegraph_click"
+  },
+  "telephone_ring": {
+    "sounds": [
+      {
+        "name": "minecraft:block/beacon/activate"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.telephone_ring"
+  },
+  "radio_static": {
+    "sounds": [
+      {
+        "name": "minecraft:ambient/underwater/additions/crackles2"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.radio_static"
+  },
+  "conveyor_move": {
+    "sounds": [
+      {
+        "name": "minecraft:tile/piston/in"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.conveyor_move"
+  },
+  "boiler_explosion": {
+    "sounds": [
+      {
+        "name": "minecraft:random/explode1"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.boiler_explosion"
+  },
+  "arc_furnace": {
+    "sounds": [
+      {
+        "name": "minecraft:block/blastfurnace/blastfurnace2"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.arc_furnace"
+  },
+  "converter_sparks": {
+    "sounds": [
+      {
+        "name": "minecraft:random/anvil_land"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.converter_sparks"
+  },
+  "windmill_turn": {
+    "sounds": [
+      {
+        "name": "minecraft:ambient/nether/soulsand_valley/wind2"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.windmill_turn"
+  },
+  "water_wheel_turn": {
+    "sounds": [
+      {
+        "name": "minecraft:block/campfire/crackle2"
+      }
+    ],
+    "subtitle": "subtitle.terrafabrica.water_wheel_turn"
+  }
+}

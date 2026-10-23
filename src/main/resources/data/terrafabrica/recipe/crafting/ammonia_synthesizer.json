@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "SCS",
+    "SPS",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:steam_casing"
+    },
+    "C": {
+      "item": "terrafabrica:copper_coil"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:ammonia_synthesizer",
+    "count": 1
+  },
+  "research": "ammonia"
+}

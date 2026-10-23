@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "STS",
+    "GSG",
+    " F "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "T": {
+      "item": "minecraft:smooth_stone"
+    },
+    "G": {
+      "item": "terrafabrica:iron_gear"
+    },
+    "F": {
+      "item": "terrafabrica:machine_frame"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:grinding_machine",
+    "count": 1
+  },
+  "research": "machine_tools_grinding"
+}

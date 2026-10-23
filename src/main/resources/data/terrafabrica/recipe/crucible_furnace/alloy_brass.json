@@ -1,0 +1,29 @@
+{
+  "type": "terrafabrica:crucible_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "terrafabrica:zinc_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:brass_ingot",
+      "count": 3
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "era2_transition",
+  "min_temperature": 1223.0,
+  "counts": [
+    1,
+    1,
+    1
+  ]
+}

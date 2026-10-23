@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "ICI",
+    "CPC",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_casing"
+    },
+    "C": {
+      "item": "terrafabrica:copper_coil"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:air_separation_unit",
+    "count": 1
+  },
+  "research": "air_separation"
+}

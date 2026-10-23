@@ -1,0 +1,33 @@
+{
+  "type": "terrafabrica:electric_arc_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "terrafabrica:limestone_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:steel_ingot",
+      "count": 4
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "electric_arc_furnace",
+  "min_temperature": 2273.0,
+  "counts": [
+    1,
+    1,
+    1,
+    1
+  ]
+}

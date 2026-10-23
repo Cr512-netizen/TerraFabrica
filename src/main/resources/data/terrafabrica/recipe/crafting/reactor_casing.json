@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IPI",
+    "P P",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "P": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:reactor_casing",
+    "count": 2
+  },
+  "research": "chemistry_soda"
+}

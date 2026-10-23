@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/power_hammer"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/power_hammer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/power_hammer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/power_hammer",
+      "y": 270
+    }
+  }
+}

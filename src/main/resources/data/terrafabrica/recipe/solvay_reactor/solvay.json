@@ -1,0 +1,40 @@
+{
+  "type": "terrafabrica:solvay_reactor",
+  "ingredients": [
+    {
+      "item": "terrafabrica:salt"
+    },
+    {
+      "item": "terrafabrica:salt"
+    },
+    {
+      "item": "terrafabrica:coal_powder"
+    },
+    {
+      "item": "terrafabrica:ammonia_bottle"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:sodium_bicarbonate",
+      "count": 1
+    },
+    {
+      "id": "terrafabrica:ammonium_chloride",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "chemistry_soda",
+  "fluid_in": {
+    "id": "terrafabrica:carbon_dioxide",
+    "amount": 500
+  },
+  "counts": [
+    1,
+    1,
+    1,
+    1
+  ]
+}

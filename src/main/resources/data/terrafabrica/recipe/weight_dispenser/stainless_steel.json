@@ -1,0 +1,28 @@
+{
+  "type": "terrafabrica:weight_dispenser",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "terrafabrica:chromium_ingot"
+    },
+    {
+      "item": "terrafabrica:nickel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:stainless_steel_ingot",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "electric_arc_furnace",
+  "counts": [
+    74,
+    18,
+    8
+  ]
+}

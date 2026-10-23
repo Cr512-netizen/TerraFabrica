@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IWI",
+    "I I",
+    "IWI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "terrafabrica:copper_wire"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:stator",
+    "count": 1
+  },
+  "research": "electric_generator"
+}

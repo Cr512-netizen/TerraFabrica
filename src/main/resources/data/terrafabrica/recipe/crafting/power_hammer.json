@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "III",
+    "ISI",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    },
+    "G": {
+      "item": "terrafabrica:iron_gear"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:power_hammer",
+    "count": 1
+  },
+  "research": "machine_tools_hammer"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "terrafabrica:weight_dispenser",
+  "ingredients": [
+    {
+      "item": "terrafabrica:nickel_ingot"
+    },
+    {
+      "item": "terrafabrica:chromium_ingot"
+    },
+    {
+      "item": "terrafabrica:cobalt_ingot"
+    },
+    {
+      "item": "terrafabrica:niobium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:superalloy_ingot",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "electric_arc_furnace",
+  "counts": [
+    103,
+    50,
+    40,
+    3
+  ]
+}

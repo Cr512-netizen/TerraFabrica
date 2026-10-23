@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "III",
+    " SS"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:iron_saw",
+    "count": 1
+  },
+  "research": "iron_metallurgy"
+}

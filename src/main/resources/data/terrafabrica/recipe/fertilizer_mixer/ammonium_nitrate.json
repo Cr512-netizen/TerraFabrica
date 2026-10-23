@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:fertilizer_mixer",
+  "ingredients": [
+    {
+      "item": "terrafabrica:nitric_acid_bottle"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:ammonium_nitrate",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "fertilizers",
+  "fluid_in": {
+    "id": "terrafabrica:ammonia",
+    "amount": 1000
+  }
+}

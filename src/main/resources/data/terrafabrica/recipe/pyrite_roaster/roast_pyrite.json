@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:pyrite_roaster",
+  "ingredients": [
+    {
+      "item": "terrafabrica:pyrite_concentrate"
+    }
+  ],
+  "results": [],
+  "energy": 0,
+  "ticks": 400,
+  "research": "chemistry_sulfuric",
+  "fluid_in": {
+    "id": "terrafabrica:oxygen",
+    "amount": 500
+  },
+  "fluid_out": {
+    "id": "terrafabrica:sulfur_dioxide",
+    "amount": 1000
+  },
+  "min_temperature": 1073.0
+}

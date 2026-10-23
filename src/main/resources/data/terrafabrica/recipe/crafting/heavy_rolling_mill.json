@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "ISI",
+    "FSF",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:steel_plate"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    },
+    "F": {
+      "item": "terrafabrica:flywheel"
+    },
+    "G": {
+      "item": "terrafabrica:gearbox"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:heavy_rolling_mill",
+    "count": 1
+  },
+  "research": "heavy_rolling"
+}

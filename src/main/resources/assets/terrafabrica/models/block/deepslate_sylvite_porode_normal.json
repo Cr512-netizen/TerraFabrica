@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "terrafabrica:block/porode/deepslate_sylvite_porode_normal"
+  }
+}

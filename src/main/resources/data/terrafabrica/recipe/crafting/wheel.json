@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    " I ",
+    "ISI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:wheel",
+    "count": 1
+  },
+  "research": "transport_minecart"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IVI",
+    "VWV"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "V": {
+      "item": "terrafabrica:vacuum_tube"
+    },
+    "W": {
+      "item": "terrafabrica:copper_wire"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:plc",
+    "count": 1
+  },
+  "research": "automation"
+}

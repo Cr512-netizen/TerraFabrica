@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "R",
+    "R",
+    "W"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:iron_rod"
+    },
+    "W": {
+      "item": "terrafabrica:copper_wire"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:antenna",
+    "count": 1
+  },
+  "research": "radio"
+}

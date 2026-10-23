@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "TBT",
+    "TST",
+    "TBT"
+  ],
+  "key": {
+    "T": {
+      "item": "terrafabrica:transformer"
+    },
+    "B": {
+      "item": "terrafabrica:circuit_breaker"
+    },
+    "S": {
+      "item": "terrafabrica:steel_plate"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:substation",
+    "count": 1
+  },
+  "research": "power_network"
+}

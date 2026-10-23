@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "terrafabrica:block/machine/machine_side",
+    "down": "terrafabrica:block/machine/machine_top",
+    "up": "terrafabrica:block/machine/machine_top",
+    "north": "terrafabrica:block/machine/turbine",
+    "south": "terrafabrica:block/machine/machine_side",
+    "east": "terrafabrica:block/machine/machine_side",
+    "west": "terrafabrica:block/machine/machine_side"
+  }
+}

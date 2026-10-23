@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "terrafabrica:copper_wire"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:magnetic_core",
+    "count": 1
+  },
+  "research": "tube_computer"
+}

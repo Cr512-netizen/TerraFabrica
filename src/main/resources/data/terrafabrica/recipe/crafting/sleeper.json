@@ -1,0 +1,13 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:oak_planks"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:sleeper",
+    "count": 2
+  },
+  "research": "transport_rails"
+}

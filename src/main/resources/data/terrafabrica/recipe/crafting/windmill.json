@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    " L ",
+    "PSP",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "P": {
+      "item": "minecraft:oak_planks"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:windmill",
+    "count": 1
+  },
+  "research": "water_wheel"
+}

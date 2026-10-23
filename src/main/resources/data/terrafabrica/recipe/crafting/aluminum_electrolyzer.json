@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RER",
+    "RCR",
+    "RER"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "E": {
+      "item": "terrafabrica:graphite_electrode"
+    },
+    "C": {
+      "item": "terrafabrica:copper_coil"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:aluminum_electrolyzer",
+    "count": 1
+  },
+  "research": "aluminum"
+}

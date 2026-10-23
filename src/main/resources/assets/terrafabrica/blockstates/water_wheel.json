@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/water_wheel"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/water_wheel",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/water_wheel",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/water_wheel",
+      "y": 270
+    }
+  }
+}

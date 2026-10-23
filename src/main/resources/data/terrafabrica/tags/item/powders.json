@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:copper_powder",
+    "terrafabrica:tin_powder",
+    "terrafabrica:hematite_powder",
+    "terrafabrica:magnetite_powder",
+    "terrafabrica:galena_powder",
+    "terrafabrica:pyrite_powder",
+    "terrafabrica:limestone_powder",
+    "terrafabrica:claystone_powder",
+    "terrafabrica:coal_powder",
+    "terrafabrica:sylvite_powder",
+    "terrafabrica:bauxite_powder",
+    "terrafabrica:chromite_powder",
+    "terrafabrica:pentlandite_powder",
+    "terrafabrica:sphalerite_powder",
+    "terrafabrica:molybdenite_powder",
+    "terrafabrica:wolframite_powder",
+    "terrafabrica:uraninite_powder",
+    "terrafabrica:pyrolusite_powder",
+    "terrafabrica:fluorite_powder",
+    "terrafabrica:barite_powder",
+    "terrafabrica:apatite_powder",
+    "terrafabrica:gypsum_powder",
+    "terrafabrica:magnesite_powder",
+    "terrafabrica:sulfur_powder",
+    "terrafabrica:graphite_powder",
+    "terrafabrica:halite_powder",
+    "terrafabrica:carnallite_powder"
+  ]
+}

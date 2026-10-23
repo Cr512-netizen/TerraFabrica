@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/absorber"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/absorber",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/absorber",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/absorber",
+      "y": 270
+    }
+  }
+}

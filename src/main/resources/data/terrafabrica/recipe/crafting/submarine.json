@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "BPB",
+    "SSS",
+    "BPB"
+  ],
+  "key": {
+    "B": {
+      "item": "terrafabrica:lead_acid_battery"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    },
+    "S": {
+      "item": "terrafabrica:steel_plate"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:submarine",
+    "count": 1
+  },
+  "research": "submarine"
+}

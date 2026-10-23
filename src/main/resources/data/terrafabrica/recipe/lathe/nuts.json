@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:lathe",
+  "ingredients": [
+    {
+      "item": "terrafabrica:iron_rod"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:nut",
+      "count": 4
+    }
+  ],
+  "energy": 0,
+  "ticks": 100,
+  "research": "machine_tools_lathe"
+}

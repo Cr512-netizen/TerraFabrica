@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/separator"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/separator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/separator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/separator",
+      "y": 270
+    }
+  }
+}

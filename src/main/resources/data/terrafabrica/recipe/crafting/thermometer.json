@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    " G ",
+    "GCG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:thermometer",
+    "count": 1
+  },
+  "research": "copper_metallurgy"
+}

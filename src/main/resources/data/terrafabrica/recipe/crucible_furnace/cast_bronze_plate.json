@@ -1,0 +1,29 @@
+{
+  "type": "terrafabrica:crucible_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    {
+      "item": "terrafabrica:bronze_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:bronze_plate",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 400,
+  "research": "bronze_metallurgy",
+  "min_temperature": 1223.0,
+  "counts": [
+    1,
+    1,
+    1
+  ]
+}

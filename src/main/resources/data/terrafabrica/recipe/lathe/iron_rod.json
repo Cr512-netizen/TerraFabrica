@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:lathe",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:iron_rod",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 100,
+  "research": "machine_tools_lathe"
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:chromite_porode_poor",
+    "terrafabrica:deepslate_chromite_porode_poor",
+    "terrafabrica:chromite_porode_normal",
+    "terrafabrica:deepslate_chromite_porode_normal",
+    "terrafabrica:chromite_porode_rich",
+    "terrafabrica:deepslate_chromite_porode_rich"
+  ]
+}

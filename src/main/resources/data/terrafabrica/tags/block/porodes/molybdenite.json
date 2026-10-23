@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:molybdenite_porode_poor",
+    "terrafabrica:deepslate_molybdenite_porode_poor",
+    "terrafabrica:molybdenite_porode_normal",
+    "terrafabrica:deepslate_molybdenite_porode_normal",
+    "terrafabrica:molybdenite_porode_rich",
+    "terrafabrica:deepslate_molybdenite_porode_rich"
+  ]
+}

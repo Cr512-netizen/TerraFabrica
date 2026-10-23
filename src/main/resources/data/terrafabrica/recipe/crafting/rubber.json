@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:coal_tar"
+    },
+    {
+      "item": "terrafabrica:sulfur_concentrate"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:rubber",
+    "count": 1
+  },
+  "research": "oil_refining"
+}

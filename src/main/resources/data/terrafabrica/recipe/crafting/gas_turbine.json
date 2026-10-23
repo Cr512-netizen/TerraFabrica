@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RPR",
+    "RFR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:reactor_casing"
+    },
+    "P": {
+      "item": "terrafabrica:piston"
+    },
+    "F": {
+      "item": "terrafabrica:flywheel"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:gas_turbine",
+    "count": 1
+  },
+  "research": "gas_turbine"
+}

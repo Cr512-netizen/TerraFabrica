@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:copper_rock",
+    "terrafabrica:tin_rock",
+    "terrafabrica:hematite_rock",
+    "terrafabrica:magnetite_rock",
+    "terrafabrica:galena_rock",
+    "terrafabrica:pyrite_rock",
+    "terrafabrica:limestone_rock",
+    "terrafabrica:claystone_rock",
+    "terrafabrica:coal_rock",
+    "terrafabrica:sylvite_rock",
+    "terrafabrica:bauxite_rock",
+    "terrafabrica:chromite_rock",
+    "terrafabrica:pentlandite_rock",
+    "terrafabrica:sphalerite_rock",
+    "terrafabrica:molybdenite_rock",
+    "terrafabrica:wolframite_rock",
+    "terrafabrica:uraninite_rock",
+    "terrafabrica:pyrolusite_rock",
+    "terrafabrica:fluorite_rock",
+    "terrafabrica:barite_rock",
+    "terrafabrica:apatite_rock",
+    "terrafabrica:gypsum_rock",
+    "terrafabrica:magnesite_rock",
+    "terrafabrica:sulfur_rock",
+    "terrafabrica:graphite_rock",
+    "terrafabrica:halite_rock",
+    "terrafabrica:carnallite_rock"
+  ]
+}

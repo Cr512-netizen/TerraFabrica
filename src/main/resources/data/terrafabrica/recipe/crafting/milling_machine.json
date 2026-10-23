@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IFI",
+    "GSG",
+    "IFI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "F": {
+      "item": "terrafabrica:machine_frame"
+    },
+    "G": {
+      "item": "terrafabrica:iron_gear"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:milling_machine",
+    "count": 1
+  },
+  "research": "machine_tools_milling"
+}

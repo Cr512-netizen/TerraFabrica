@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RCR",
+    "RPR",
+    "RCR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:reactor_casing"
+    },
+    "C": {
+      "item": "terrafabrica:copper_coil"
+    },
+    "P": {
+      "item": "terrafabrica:vanadium_catalyst"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:contact_acid_reactor",
+    "count": 1
+  },
+  "research": "contact_sulfuric"
+}

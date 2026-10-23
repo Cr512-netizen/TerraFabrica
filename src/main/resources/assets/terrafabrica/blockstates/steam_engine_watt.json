@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/steam_engine_watt"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/steam_engine_watt",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/steam_engine_watt",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/steam_engine_watt",
+      "y": 270
+    }
+  }
+}

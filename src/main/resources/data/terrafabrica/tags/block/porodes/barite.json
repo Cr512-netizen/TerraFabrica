@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:barite_porode_poor",
+    "terrafabrica:deepslate_barite_porode_poor",
+    "terrafabrica:barite_porode_normal",
+    "terrafabrica:deepslate_barite_porode_normal",
+    "terrafabrica:barite_porode_rich",
+    "terrafabrica:deepslate_barite_porode_rich"
+  ]
+}

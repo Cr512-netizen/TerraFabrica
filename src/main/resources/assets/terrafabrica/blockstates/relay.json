@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/relay"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/relay",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/relay",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/relay",
+      "y": 270
+    }
+  }
+}

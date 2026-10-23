@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "C ",
+    "IB",
+    "C "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "terrafabrica:bronze_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:governor",
+    "count": 1
+  },
+  "research": "steam_watt"
+}

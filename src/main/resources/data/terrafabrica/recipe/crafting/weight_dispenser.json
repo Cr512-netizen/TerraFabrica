@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "ICI",
+    "FPF",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "F": {
+      "item": "terrafabrica:precision_part"
+    },
+    "P": {
+      "item": "terrafabrica:piston"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:weight_dispenser",
+    "count": 1
+  },
+  "research": "electric_arc_furnace"
+}

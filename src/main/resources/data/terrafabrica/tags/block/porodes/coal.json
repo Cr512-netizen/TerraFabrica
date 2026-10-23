@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:coal_porode_poor",
+    "terrafabrica:deepslate_coal_porode_poor",
+    "terrafabrica:coal_porode_normal",
+    "terrafabrica:deepslate_coal_porode_normal",
+    "terrafabrica:coal_porode_rich",
+    "terrafabrica:deepslate_coal_porode_rich"
+  ]
+}

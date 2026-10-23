@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "S",
+    "P",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:steel_plate"
+    },
+    "P": {
+      "item": "terrafabrica:iron_rod"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:power_pole_steel",
+    "count": 1
+  },
+  "research": "power_network"
+}

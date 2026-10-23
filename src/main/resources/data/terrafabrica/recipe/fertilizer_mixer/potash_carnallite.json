@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:fertilizer_mixer",
+  "ingredients": [
+    {
+      "item": "terrafabrica:carnallite_concentrate"
+    },
+    {
+      "item": "terrafabrica:carnallite_concentrate"
+    },
+    {
+      "item": "terrafabrica:carnallite_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:potash_fertilizer",
+      "count": 1
+    },
+    {
+      "id": "terrafabrica:magnesium_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 300,
+  "research": "fertilizers"
+}

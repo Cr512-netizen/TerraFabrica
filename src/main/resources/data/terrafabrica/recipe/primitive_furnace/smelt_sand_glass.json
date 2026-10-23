@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:primitive_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:glass",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 400,
+  "min_temperature": 1173.0
+}

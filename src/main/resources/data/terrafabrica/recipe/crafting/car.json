@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "PWP",
+    "SRW",
+    "PWP"
+  ],
+  "key": {
+    "P": {
+      "item": "terrafabrica:piston"
+    },
+    "W": {
+      "item": "terrafabrica:wheel"
+    },
+    "S": {
+      "item": "terrafabrica:steel_plate"
+    },
+    "R": {
+      "item": "terrafabrica:rubber"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:car",
+    "count": 1
+  },
+  "research": "car"
+}

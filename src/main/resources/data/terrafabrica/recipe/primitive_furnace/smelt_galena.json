@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:primitive_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:galena_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:lead_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "ore_enrichment",
+  "min_temperature": 600.0
+}

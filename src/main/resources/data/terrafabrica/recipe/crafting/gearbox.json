@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "G G",
+    "G G",
+    "GMG"
+  ],
+  "key": {
+    "G": {
+      "item": "terrafabrica:bronze_gear"
+    },
+    "M": {
+      "item": "terrafabrica:machine_frame"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:gearbox",
+    "count": 1
+  },
+  "research": "transmission"
+}

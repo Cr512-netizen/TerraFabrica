@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:heavy_rolling_mill",
+  "ingredients": [
+    {
+      "item": "terrafabrica:steel_ingot"
+    },
+    {
+      "item": "terrafabrica:steel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:steel_beam",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "heavy_rolling",
+  "min_temperature": 1173.0
+}

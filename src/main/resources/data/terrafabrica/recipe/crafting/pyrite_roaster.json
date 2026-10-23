@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RIR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:pyrite_roaster",
+    "count": 1
+  },
+  "research": "chemistry_sulfuric"
+}

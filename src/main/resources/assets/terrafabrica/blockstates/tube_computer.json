@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/tube_computer"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/tube_computer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/tube_computer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/tube_computer",
+      "y": 270
+    }
+  }
+}

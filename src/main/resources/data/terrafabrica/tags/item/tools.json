@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:bronze_pickaxe",
+    "terrafabrica:bronze_axe",
+    "terrafabrica:bronze_shovel",
+    "terrafabrica:bronze_hoe",
+    "terrafabrica:bronze_hammer",
+    "terrafabrica:bronze_shears",
+    "terrafabrica:bronze_file",
+    "terrafabrica:bronze_chisel",
+    "terrafabrica:bronze_tongs",
+    "terrafabrica:bronze_saw",
+    "terrafabrica:iron_hammer",
+    "terrafabrica:iron_file",
+    "terrafabrica:iron_chisel",
+    "terrafabrica:iron_tongs",
+    "terrafabrica:iron_saw"
+  ]
+}

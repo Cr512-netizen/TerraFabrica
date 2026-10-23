@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:blast_furnace",
+    "terrafabrica:bessemer_converter",
+    "terrafabrica:open_hearth_furnace",
+    "terrafabrica:electric_arc_furnace",
+    "terrafabrica:heavy_rolling_mill",
+    "terrafabrica:steam_turbine",
+    "terrafabrica:gas_turbine",
+    "terrafabrica:ccgt_plant",
+    "terrafabrica:electric_generator",
+    "terrafabrica:transformer",
+    "terrafabrica:substation",
+    "terrafabrica:circuit_breaker",
+    "terrafabrica:air_separation_unit",
+    "terrafabrica:ammonia_synthesizer",
+    "terrafabrica:aluminum_electrolyzer"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "SPS",
+    "SGS",
+    "SPS"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:shaft"
+    },
+    "P": {
+      "item": "minecraft:oak_planks"
+    },
+    "G": {
+      "item": "terrafabrica:bronze_gear"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:water_wheel",
+    "count": 1
+  },
+  "research": "water_wheel"
+}

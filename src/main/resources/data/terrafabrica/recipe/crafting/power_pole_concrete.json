@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "G",
+    "C",
+    "G"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gravel"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:power_pole_concrete",
+    "count": 2
+  },
+  "research": "power_network"
+}

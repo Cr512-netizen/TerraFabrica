@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "CGC",
+    "CBC",
+    "CPC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "G": {
+      "item": "terrafabrica:bronze_gear"
+    },
+    "B": {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    "P": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:crusher",
+    "count": 1
+  },
+  "research": "ore_enrichment"
+}

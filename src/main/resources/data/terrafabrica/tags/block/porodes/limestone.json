@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:limestone_porode_poor",
+    "terrafabrica:deepslate_limestone_porode_poor",
+    "terrafabrica:limestone_porode_normal",
+    "terrafabrica:deepslate_limestone_porode_normal",
+    "terrafabrica:limestone_porode_rich",
+    "terrafabrica:deepslate_limestone_porode_rich"
+  ]
+}

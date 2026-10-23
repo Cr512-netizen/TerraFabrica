@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:copper_concentrate",
+    "terrafabrica:tin_concentrate",
+    "terrafabrica:hematite_concentrate",
+    "terrafabrica:magnetite_concentrate",
+    "terrafabrica:galena_concentrate",
+    "terrafabrica:pyrite_concentrate",
+    "terrafabrica:limestone_concentrate",
+    "terrafabrica:claystone_concentrate",
+    "terrafabrica:coal_concentrate",
+    "terrafabrica:sylvite_concentrate",
+    "terrafabrica:bauxite_concentrate",
+    "terrafabrica:chromite_concentrate",
+    "terrafabrica:pentlandite_concentrate",
+    "terrafabrica:sphalerite_concentrate",
+    "terrafabrica:molybdenite_concentrate",
+    "terrafabrica:wolframite_concentrate",
+    "terrafabrica:uraninite_concentrate",
+    "terrafabrica:pyrolusite_concentrate",
+    "terrafabrica:fluorite_concentrate",
+    "terrafabrica:barite_concentrate",
+    "terrafabrica:apatite_concentrate",
+    "terrafabrica:gypsum_concentrate",
+    "terrafabrica:magnesite_concentrate",
+    "terrafabrica:sulfur_concentrate",
+    "terrafabrica:graphite_concentrate",
+    "terrafabrica:halite_concentrate",
+    "terrafabrica:carnallite_concentrate"
+  ]
+}

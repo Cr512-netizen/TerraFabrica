@@ -1,0 +1,40 @@
+{
+  "type": "terrafabrica:blast_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:hematite_concentrate"
+    },
+    {
+      "item": "terrafabrica:hematite_concentrate"
+    },
+    {
+      "item": "terrafabrica:hematite_concentrate"
+    },
+    {
+      "item": "terrafabrica:hematite_concentrate"
+    },
+    {
+      "item": "terrafabrica:coke"
+    },
+    {
+      "item": "terrafabrica:coke"
+    },
+    {
+      "item": "terrafabrica:limestone_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:pig_iron_ingot",
+      "count": 2
+    },
+    {
+      "id": "terrafabrica:slag",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 1200,
+  "research": "blast_furnace_coke",
+  "min_temperature": 1273.0
+}

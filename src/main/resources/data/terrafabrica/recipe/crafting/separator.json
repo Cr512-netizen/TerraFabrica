@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "PGP",
+    "PBP",
+    "PLP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:oak_planks"
+    },
+    "G": {
+      "item": "terrafabrica:bronze_gear"
+    },
+    "B": {
+      "item": "terrafabrica:bronze_ingot"
+    },
+    "L": {
+      "item": "terrafabrica:lead_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:separator",
+    "count": 1
+  },
+  "research": "ore_enrichment"
+}

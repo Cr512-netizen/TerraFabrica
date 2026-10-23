@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "CBC",
+    "C C",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "B": {
+      "item": "terrafabrica:bronze_plate"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:bloomery",
+    "count": 1
+  },
+  "research": "copper_metallurgy"
+}

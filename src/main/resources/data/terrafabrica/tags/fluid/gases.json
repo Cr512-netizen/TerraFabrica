@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:steam_low",
+    "terrafabrica:steam_high",
+    "terrafabrica:ammonia",
+    "terrafabrica:chlorine",
+    "terrafabrica:hydrogen",
+    "terrafabrica:oxygen",
+    "terrafabrica:nitrogen",
+    "terrafabrica:carbon_dioxide",
+    "terrafabrica:natural_gas",
+    "terrafabrica:sulfur_dioxide",
+    "terrafabrica:coal_gas"
+  ]
+}

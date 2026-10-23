@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/substation"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/substation",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/substation",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/substation",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,34 @@
+# Terra Fabrica — mod metadata for NeoForge 1.21.1.
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT (code) / CC BY-SA 4.0 (assets)"
+issueTrackerURL="https://github.com/terrafabrica/terrafabrica/issues"
+
+[[mods]]
+modId="terrafabrica"
+version="${file.jarVersion}"
+displayName="Terra Fabrica"
+authors="TerraFabricaDev"
+description='''
+Scientific-technical progression mod: from primitive tools to the industrial revolution.
+Eras I (Mechanical Awakening) and II (Industrial Revolution) implemented.
+No external mod dependencies; SI units everywhere (J, W, K, Pa, N, V, A).
+'''
+
+[[dependencies.terrafabrica]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.terrafabrica]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
+
+# The single documented mixin: per-player recipe gating of crafting recipes.
+[[mixins]]
+    config="terrafabrica.mixins.json"

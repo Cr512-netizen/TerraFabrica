@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:pentlandite_porode_poor",
+    "terrafabrica:deepslate_pentlandite_porode_poor",
+    "terrafabrica:pentlandite_porode_normal",
+    "terrafabrica:deepslate_pentlandite_porode_normal",
+    "terrafabrica:pentlandite_porode_rich",
+    "terrafabrica:deepslate_pentlandite_porode_rich"
+  ]
+}

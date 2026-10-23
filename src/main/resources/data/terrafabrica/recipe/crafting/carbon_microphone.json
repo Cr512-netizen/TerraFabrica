@@ -1,0 +1,19 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:coal_powder"
+    },
+    {
+      "item": "terrafabrica:copper_plate"
+    },
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:carbon_microphone",
+    "count": 1
+  },
+  "research": "telephone"
+}

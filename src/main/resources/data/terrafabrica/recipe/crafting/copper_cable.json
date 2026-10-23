@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "WWW",
+    "LLL"
+  ],
+  "key": {
+    "W": {
+      "item": "terrafabrica:copper_wire"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:cable_copper",
+    "count": 2
+  },
+  "research": "power_network"
+}

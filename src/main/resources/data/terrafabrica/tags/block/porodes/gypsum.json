@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:gypsum_porode_poor",
+    "terrafabrica:deepslate_gypsum_porode_poor",
+    "terrafabrica:gypsum_porode_normal",
+    "terrafabrica:deepslate_gypsum_porode_normal",
+    "terrafabrica:gypsum_porode_rich",
+    "terrafabrica:deepslate_gypsum_porode_rich"
+  ]
+}

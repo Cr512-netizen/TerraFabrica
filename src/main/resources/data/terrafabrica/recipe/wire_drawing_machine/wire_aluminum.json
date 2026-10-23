@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:wire_drawing_machine",
+  "ingredients": [
+    {
+      "item": "terrafabrica:aluminum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:aluminum_wire",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 100,
+  "research": "wire_drawing"
+}

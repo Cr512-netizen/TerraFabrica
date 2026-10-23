@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/calcination_furnace"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/calcination_furnace",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/calcination_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/calcination_furnace",
+      "y": 270
+    }
+  }
+}

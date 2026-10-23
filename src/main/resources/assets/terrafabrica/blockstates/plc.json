@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/plc"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/plc",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/plc",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/plc",
+      "y": 270
+    }
+  }
+}

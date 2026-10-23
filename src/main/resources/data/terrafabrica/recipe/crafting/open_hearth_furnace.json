@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RSR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "S": {
+      "item": "terrafabrica:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:open_hearth_furnace",
+    "count": 1
+  },
+  "research": "open_hearth"
+}

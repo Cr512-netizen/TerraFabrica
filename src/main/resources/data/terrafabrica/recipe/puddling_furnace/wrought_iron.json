@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:puddling_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:pig_iron_ingot"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "results": [],
+  "energy": 0,
+  "ticks": 600,
+  "research": "iron_metallurgy",
+  "min_temperature": 1373.0
+}

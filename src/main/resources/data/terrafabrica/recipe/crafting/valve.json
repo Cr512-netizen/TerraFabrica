@@ -1,0 +1,23 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IPI",
+    " R "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "terrafabrica:piston"
+    },
+    "R": {
+      "item": "terrafabrica:iron_rod"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:valve",
+    "count": 1
+  },
+  "research": "steam_watt"
+}

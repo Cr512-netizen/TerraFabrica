@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:grinding_machine",
+  "ingredients": [
+    {
+      "item": "terrafabrica:iron_plate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:precision_part",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "machine_tools_grinding"
+}

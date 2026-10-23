@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "terrafabrica:tin_ingot",
+    "terrafabrica:bronze_ingot",
+    "terrafabrica:lead_ingot",
+    "terrafabrica:pig_iron_ingot",
+    "terrafabrica:brass_ingot",
+    "terrafabrica:steel_ingot",
+    "terrafabrica:stainless_steel_ingot",
+    "terrafabrica:superalloy_ingot",
+    "terrafabrica:aluminum_ingot",
+    "terrafabrica:chromium_ingot",
+    "terrafabrica:nickel_ingot",
+    "terrafabrica:zinc_ingot",
+    "terrafabrica:molybdenum_ingot",
+    "terrafabrica:tungsten_ingot",
+    "terrafabrica:manganese_ingot",
+    "terrafabrica:magnesium_ingot",
+    "terrafabrica:platinum_ingot",
+    "terrafabrica:cobalt_ingot",
+    "terrafabrica:niobium_ingot",
+    "terrafabrica:titanium_ingot",
+    "terrafabrica:vanadium_ingot",
+    "terrafabrica:titanium_alloy_ingot"
+  ]
+}

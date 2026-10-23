@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RER",
+    "RGR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "E": {
+      "item": "terrafabrica:graphite_electrode"
+    },
+    "G": {
+      "item": "terrafabrica:copper_coil"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:electric_arc_furnace",
+    "count": 1
+  },
+  "research": "electric_arc_furnace"
+}

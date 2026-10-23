@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:platinum_ingot"
+    },
+    {
+      "item": "terrafabrica:platinum_ingot"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:platinum_rhodium_net",
+    "count": 1
+  },
+  "research": "nitric_acid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "LL ",
+    "LI ",
+    "   "
+  ],
+  "key": {
+    "L": {
+      "item": "terrafabrica:lead_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:lead_casing",
+    "count": 2
+  },
+  "research": "chemistry_sulfuric"
+}

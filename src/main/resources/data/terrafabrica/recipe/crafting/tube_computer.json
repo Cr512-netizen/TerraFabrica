@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "VTV",
+    "TMT",
+    "VTV"
+  ],
+  "key": {
+    "V": {
+      "item": "terrafabrica:vacuum_tube"
+    },
+    "T": {
+      "item": "terrafabrica:vacuum_tube"
+    },
+    "M": {
+      "item": "terrafabrica:magnetic_core"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:tube_computer",
+    "count": 1
+  },
+  "research": "tube_computer"
+}

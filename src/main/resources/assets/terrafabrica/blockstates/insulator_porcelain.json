@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/insulator_porcelain"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/insulator_porcelain",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/insulator_porcelain",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/insulator_porcelain",
+      "y": 270
+    }
+  }
+}

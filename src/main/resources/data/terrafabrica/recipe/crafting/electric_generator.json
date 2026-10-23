@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "ICI",
+    "CRC",
+    "ISI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_casing"
+    },
+    "C": {
+      "item": "terrafabrica:copper_coil"
+    },
+    "R": {
+      "item": "terrafabrica:rotor"
+    },
+    "S": {
+      "item": "terrafabrica:stator"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:electric_generator",
+    "count": 1
+  },
+  "research": "electric_generator"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:separator",
+  "ingredients": [
+    {
+      "item": "terrafabrica:sulfur_powder"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:sulfur_concentrate",
+      "count": 1
+    }
+  ],
+  "energy": 50000,
+  "ticks": 100,
+  "research": "ore_enrichment",
+  "counts": [
+    2
+  ]
+}

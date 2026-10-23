@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "ATA",
+    "VTS",
+    "ATA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrafabrica:antenna"
+    },
+    "T": {
+      "item": "terrafabrica:vacuum_tube"
+    },
+    "V": {
+      "item": "terrafabrica:aluminum_plate"
+    },
+    "S": {
+      "item": "terrafabrica:speaker"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:radio",
+    "count": 1
+  },
+  "research": "radio"
+}

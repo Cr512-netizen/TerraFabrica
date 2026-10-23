@@ -1,0 +1,26 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IPI",
+    "CRC"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "P": {
+      "item": "minecraft:copper_ingot"
+    },
+    "C": {
+      "item": "terrafabrica:copper_wire"
+    },
+    "R": {
+      "item": "terrafabrica:iron_rod"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:circuit_breaker",
+    "count": 1
+  },
+  "research": "power_network"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/ostwald_reactor"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/ostwald_reactor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/ostwald_reactor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/ostwald_reactor",
+      "y": 270
+    }
+  }
+}

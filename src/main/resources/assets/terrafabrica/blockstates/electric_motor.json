@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "terrafabrica:block/electric_motor"
+    },
+    "facing=east": {
+      "model": "terrafabrica:block/electric_motor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "terrafabrica:block/electric_motor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "terrafabrica:block/electric_motor",
+      "y": 270
+    }
+  }
+}

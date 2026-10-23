@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:bloomery",
+  "ingredients": [
+    {
+      "item": "terrafabrica:magnetite_concentrate"
+    },
+    {
+      "item": "terrafabrica:magnetite_concentrate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:pig_iron_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 800,
+  "research": "iron_metallurgy",
+  "min_temperature": 1573.0
+}

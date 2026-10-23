@@ -1,0 +1,20 @@
+{
+  "type": "terrafabrica:drill_press",
+  "ingredients": [
+    {
+      "item": "terrafabrica:iron_plate"
+    },
+    {
+      "item": "terrafabrica:iron_plate"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:machine_frame",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 200,
+  "research": "machine_tools_drill"
+}

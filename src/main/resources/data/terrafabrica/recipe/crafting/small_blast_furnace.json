@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "RRR",
+    "RBR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "terrafabrica:refractory_brick"
+    },
+    "B": {
+      "item": "terrafabrica:bellows"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:small_blast_furnace",
+    "count": 1
+  },
+  "research": "iron_metallurgy"
+}

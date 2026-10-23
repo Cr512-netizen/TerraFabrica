@@ -1,0 +1,33 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "SBS",
+    "CYP",
+    "SRS"
+  ],
+  "key": {
+    "S": {
+      "item": "terrafabrica:steam_casing"
+    },
+    "B": {
+      "item": "terrafabrica:boiler_part"
+    },
+    "C": {
+      "item": "terrafabrica:cylinder"
+    },
+    "Y": {
+      "item": "terrafabrica:condenser"
+    },
+    "P": {
+      "item": "terrafabrica:pump"
+    },
+    "R": {
+      "item": "terrafabrica:balance_beam"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:steam_engine_newcomen",
+    "count": 1
+  },
+  "research": "steam_newcomen"
+}

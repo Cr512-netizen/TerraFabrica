@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "IFI",
+    "FSF",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "terrafabrica:iron_plate"
+    },
+    "F": {
+      "item": "terrafabrica:machine_frame"
+    },
+    "S": {
+      "item": "terrafabrica:shaft"
+    },
+    "G": {
+      "item": "terrafabrica:iron_gear"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:lathe",
+    "count": 1
+  },
+  "research": "machine_tools_lathe"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:research_shapeless",
+  "ingredients": [
+    {
+      "item": "terrafabrica:vanadium_ingot"
+    },
+    {
+      "item": "terrafabrica:sulfur_concentrate"
+    }
+  ],
+  "result": {
+    "id": "terrafabrica:vanadium_catalyst",
+    "count": 1
+  },
+  "research": "contact_sulfuric"
+}
