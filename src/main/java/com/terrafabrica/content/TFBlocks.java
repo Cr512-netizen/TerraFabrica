@@ -6,6 +6,7 @@ import com.terrafabrica.content.era1.PorodeRichness;
 import com.terrafabrica.content.shared.machine.CasingBlock;
 import com.terrafabrica.content.shared.machine.SimpleMachineBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RailBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -137,7 +138,21 @@ public final class TFBlocks {
     public static final DeferredBlock<Block> SOLVAY_REACTOR = machine("solvay_reactor");
     public static final DeferredBlock<Block> CALCINATION_FURNACE = machine("calcination_furnace");
 
-    public static final DeferredBlock<Block> RAIL = machine("rail");
+    /**
+     * Рельс: настоящий {@link RailBlock}, а не декоративный блок машины.
+     *
+     * <p>Без этого локомотивы и вагонетки не могли встать на собственные рельсы
+     * мода: {@code RailVehicleItem} требует {@code BlockTags.RAILS}, а
+     * {@code AbstractMinecart} проверяет именно {@link RailBlock}. Блок также
+     * добавлен в тег {@code minecraft:rails} (data/minecraft/tags/block/rails.json).
+     */
+    public static final DeferredBlock<Block> RAIL = TerraFabrica.BLOCKS.register("rail",
+            () -> new RailBlock(BlockBehaviour.Properties.of()
+                    .noCollission()
+                    .strength(0.7F)
+                    .sound(SoundType.METAL)
+                    .noOcclusion()
+                    .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> SLEEPER = machine("sleeper");
     public static final DeferredBlock<Block> CONVEYOR = machine("conveyor");
 

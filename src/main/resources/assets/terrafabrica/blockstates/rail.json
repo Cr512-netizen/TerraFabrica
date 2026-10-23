@@ -1,19 +1,14 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "terrafabrica:block/rail"
-    },
-    "facing=east": {
-      "model": "terrafabrica:block/rail",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "terrafabrica:block/rail",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "terrafabrica:block/rail",
-      "y": 270
-    }
+    "shape=north_south": { "model": "terrafabrica:block/rail" },
+    "shape=east_west": { "model": "terrafabrica:block/rail", "y": 90 },
+    "shape=ascending_north": { "model": "terrafabrica:block/rail" },
+    "shape=ascending_south": { "model": "terrafabrica:block/rail", "y": 180 },
+    "shape=ascending_east": { "model": "terrafabrica:block/rail", "y": 90 },
+    "shape=ascending_west": { "model": "terrafabrica:block/rail", "y": 270 },
+    "shape=north_east": { "model": "terrafabrica:block/rail" },
+    "shape=south_east": { "model": "terrafabrica:block/rail", "y": 90 },
+    "shape=south_west": { "model": "terrafabrica:block/rail", "y": 180 },
+    "shape=north_west": { "model": "terrafabrica:block/rail", "y": 270 }
   }
 }
