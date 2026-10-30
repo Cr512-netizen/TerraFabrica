@@ -71,10 +71,11 @@ repositories {
 
 dependencies {
     // Чистые JVM-тесты SI-API (без запуска игры).
-    // Версии взяты из офлайн-кэша Gradle: сеть в этом окружении недоступна,
-    // 5.10.2 здесь нет, а 5.11.4 уже лежит в кэше (её тянет сам NeoForge).
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+    // Gson для DataPackIntegrityTest
+    testImplementation 'com.google.code.gson:gson:2.11.0'
 }
 
 test {

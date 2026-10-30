@@ -200,9 +200,13 @@ public class ChemicalReactorBlockEntity extends MultiblockMachineBlockEntity {
         status = STATUS_WORKING;
         if (cycleTimer >= 100) {
             cycleTimer = 0;
+            // Исправленная стехиометрия: 2 H₂O → 2 H₂ + O₂
+            // 100 мБ воды → 2 мБ H₂ + 1 мБ O₂ (соотношение 2:1)
             outputTank.fill(new FluidStack(TFFluidsSource.HYDROGEN, 2), IFluidHandler.FluidAction.EXECUTE);
             outputTank.fill(new FluidStack(TFFluidsSource.OXYGEN, 1), IFluidHandler.FluidAction.EXECUTE);
             if (chloralkali) {
+                // Хлорщелочная ячейка: 2 NaCl + 2 H₂O → Cl₂ + H₂ + 2 NaOH
+                // Расходуется рассол, а не вода
                 extraTanks[0].fill(new FluidStack(TFFluidsSource.CHLORINE, 1), IFluidHandler.FluidAction.EXECUTE);
                 // Каустическая сода — предмет в выходном слоте 4.
                 net.minecraft.world.item.ItemStack naoh =
@@ -462,7 +466,14 @@ public class ChemicalReactorBlockEntity extends MultiblockMachineBlockEntity {
                 if (block == TFBlocks.SOLVAY_REACTOR.get()) yield TFRecipeTypes.SOLVAY_REACTOR.get();
                 yield TFRecipeTypes.FERTILIZER_MIXER.get();
             }
-            default -> null;
+            case ELECTROLYSIS -> TFRecipeTypes.WATER_ELECTROLYZER.get();
+            case CHLORALKALI -> TFRecipeTypes.CHLORALKALI_CELL.get();
+            case ASU -> TFRecipeTypes.AIR_SEPARATION_UNIT.get();
+            case HABER -> TFRecipeTypes.AMMONIA_SYNTHESIZER.get();
+            case OSTWALD -> TFRecipeTypes.OSTWALD_REACTOR.get();
+            case CONTACT -> TFRecipeTypes.CONTACT_ACID_REACTOR.get();
+            case ALUMINUM -> TFRecipeTypes.ALUMINUM_ELECTROLYZER.get();
+            case DISTILLATION -> TFRecipeTypes.OIL_DISTILLATION_COLUMN.get();
         };
     }
 

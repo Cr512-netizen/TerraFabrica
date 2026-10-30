@@ -1,0 +1,29 @@
+{
+  "type": "terrafabrica:blast_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:sphalerite_concentrate"
+    },
+    {
+      "item": "terrafabrica:sphalerite_concentrate"
+    },
+    {
+      "item": "terrafabrica:coke"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:zinc_ingot",
+      "count": 2
+    }
+  ],
+  "energy": 0,
+  "ticks": 600,
+  "research": "era2_transition",
+  "min_temperature": 1373.0,
+  "counts": [
+    1,
+    1,
+    1
+  ]
+}

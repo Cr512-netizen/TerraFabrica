@@ -1,0 +1,33 @@
+{
+  "type": "terrafabrica:electric_arc_furnace",
+  "ingredients": [
+    {
+      "item": "terrafabrica:pyrolusite_concentrate"
+    },
+    {
+      "item": "terrafabrica:pyrolusite_concentrate"
+    },
+    {
+      "item": "terrafabrica:aluminum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "terrafabrica:manganese_ingot",
+      "count": 1
+    },
+    {
+      "id": "terrafabrica:slag",
+      "count": 1
+    }
+  ],
+  "energy": 0,
+  "ticks": 300,
+  "research": "electric_arc_furnace",
+  "min_temperature": 2073.0,
+  "counts": [
+    1,
+    1,
+    1
+  ]
+}

@@ -8,9 +8,18 @@
       "item": "minecraft:coal"
     }
   ],
-  "results": [],
+  "results": [
+    {
+      "id": "minecraft:iron_ingot",
+      "count": 1
+    }
+  ],
   "energy": 0,
   "ticks": 600,
   "research": "iron_metallurgy",
-  "min_temperature": 1373.0
+  "min_temperature": 1373.0,
+  "counts": [
+    1,
+    1
+  ]
 }
