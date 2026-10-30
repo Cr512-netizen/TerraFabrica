@@ -257,12 +257,14 @@ public class ChemicalReactorBlockEntity extends MultiblockMachineBlockEntity {
         }
         // Сера отравляет катализатор: ускоренная деградация.
         int degrade = hasSulfur ? 10 : 1;
-        if (inputTank.getFluidAmount() >= 3 && energy.extractEnergy(2_000, false) >= 2_000) {
-            inputTank.drain(3, IFluidHandler.FluidAction.EXECUTE); // N₂ + H₂
+        if (inputTank.getFluidAmount() >= 4 && energy.extractEnergy(2_000, false) >= 2_000) {
+            // Drain 4 mB: 1 N₂ + 3 H₂
+            inputTank.drain(4, IFluidHandler.FluidAction.EXECUTE);
             cycleTimer += degrade;
             status = STATUS_WORKING;
             if (cycleTimer >= 600) {
                 cycleTimer = 0;
+                // 2 mB NH₃ на цикл при правильном соотношении
                 outputTank.fill(new FluidStack(TFFluidsSource.AMMONIA, 2), IFluidHandler.FluidAction.EXECUTE);
                 damageCatalyst(catalyst, 1);
             }
@@ -427,6 +429,10 @@ public class ChemicalReactorBlockEntity extends MultiblockMachineBlockEntity {
 
     @Override
     public int fill(FluidStack resource, IFluidHandler.FluidAction action) {
+        if (resource.getFluid().toString().contains("sulfur_dioxide")) {
+            if (action.execute()) markSulfur();
+            return resource.getAmount();
+        }
         return inputTank.fill(resource, action);
     }
 
