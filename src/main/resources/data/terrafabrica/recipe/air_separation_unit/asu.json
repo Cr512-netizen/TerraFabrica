@@ -1,0 +1,9 @@
+{
+  "type": "terrafabrica:air_separation_unit",
+  "group": "asu",
+  "ingredients": [],
+  "results": [],
+  "energy": 5000,
+  "ticks": 200,
+  "research": "air_separation"
+}

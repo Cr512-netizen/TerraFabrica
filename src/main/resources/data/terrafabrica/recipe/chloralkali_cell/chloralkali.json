@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:chloralkali_cell",
+  "group": "chloralkali",
+  "ingredients": [
+    {"item": "terrafabrica:salt"}
+  ],
+  "results": [
+    {"item": "terrafabrica:caustic_soda", "count": 2}
+  ],
+  "energy": 2000,
+  "ticks": 100,
+  "research": "chloralkali",
+  "fluid_in": {
+    "id": "minecraft:water",
+    "amount": 100
+  },
+  "fluid_out": {
+    "id": "terrafabrica:chlorine",
+    "amount": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:aluminum_electrolyzer",
+  "group": "aluminum",
+  "ingredients": [
+    {"item": "terrafabrica:alumina"}
+  ],
+  "results": [
+    {"item": "terrafabrica:aluminum_ingot", "count": 1}
+  ],
+  "energy": 4500,
+  "ticks": 600,
+  "research": "aluminum_electrolysis",
+  "fluid_out": {
+    "id": "terrafabrica:fluoride_salt",
+    "amount": 1
+  },
+  "min_temperature": 1233.15
+}

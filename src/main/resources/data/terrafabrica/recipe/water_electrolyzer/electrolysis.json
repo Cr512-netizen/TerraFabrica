@@ -1,0 +1,19 @@
+{
+  "type": "terrafabrica:water_electrolyzer",
+  "group": "electrolysis",
+  "ingredients": [
+    {"item": "minecraft:water_bucket"}
+  ],
+  "results": [],
+  "energy": 1000,
+  "ticks": 100,
+  "research": "electrolysis",
+  "fluid_in": {
+    "id": "minecraft:water",
+    "amount": 100
+  },
+  "fluid_out": {
+    "id": "terrafabrica:hydrogen",
+    "amount": 2
+  }
+}

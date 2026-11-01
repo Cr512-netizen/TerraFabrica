@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:oil_distillation_column",
+  "group": "distillation",
+  "ingredients": [],
+  "results": [],
+  "energy": 0,
+  "ticks": 200,
+  "research": "oil_distillation",
+  "fluid_in": {
+    "id": "terrafabrica:crude_oil",
+    "amount": 10
+  },
+  "fluid_out": {
+    "id": "terrafabrica:gasoline",
+    "amount": 4
+  }
+}

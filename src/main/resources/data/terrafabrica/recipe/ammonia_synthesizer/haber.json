@@ -1,0 +1,19 @@
+{
+  "type": "terrafabrica:ammonia_synthesizer",
+  "group": "haber",
+  "ingredients": [],
+  "results": [],
+  "energy": 2000,
+  "ticks": 600,
+  "research": "ammonia_synthesis",
+  "fluid_in": {
+    "id": "terrafabrica:nitrogen",
+    "amount": 1
+  },
+  "fluid_out": {
+    "id": "terrafabrica:ammonia",
+    "amount": 2
+  },
+  "min_pressure": 20000000,
+  "min_temperature": 673.15
+}
