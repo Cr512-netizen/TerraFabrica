@@ -1,0 +1,14 @@
+{
+  "type": "terrafabrica:separator",
+  "group": "cobaltite_powder",
+  "ingredients": [
+    {"item": "terrafabrica:cobaltite_powder"}
+  ],
+  "counts": [2],
+  "results": [
+    {"id": "terrafabrica:cobaltite_concentrate", "count": 1}
+  ],
+  "energy": 50000,
+  "ticks": 100,
+  "research": "ore_enrichment"
+}

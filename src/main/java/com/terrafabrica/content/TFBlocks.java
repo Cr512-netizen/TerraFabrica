@@ -53,7 +53,8 @@ public final class TFBlocks {
             "bauxite", "chromite", "pentlandite", "sphalerite", "molybdenite",
             "wolframite", "uraninite", "pyrolusite", "fluorite", "barite",
             "apatite", "gypsum", "magnesite", "sulfur", "graphite",
-            "halite", "carnallite");
+            "halite", "carnallite",
+            "cobaltite", "columbite", "sperrylite", "ilmenite", "vanadinite");
 
     /** Минералы Эпохи III. */
     public static final List<String> ERA3_MINERALS = List.of(
