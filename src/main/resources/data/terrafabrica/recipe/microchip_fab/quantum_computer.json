@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:microchip_fab",
+  "ingredients": [
+    {"item": "terrafabrica:superconductor"},
+    {"item": "terrafabrica:ai_core"},
+    {"item": "terrafabrica:microchip"},
+    {"item": "terrafabrica:carbon_fiber"}
+  ],
+  "counts": [4, 2, 8, 4],
+  "results": [
+    {"id": "terrafabrica:quantum_computer", "count": 1}
+  ],
+  "energy": 50000,
+  "ticks": 1200,
+  "research": "microchip",
+  "min_temperature": 4.0
+}

@@ -1,0 +1,15 @@
+{
+  "type": "terrafabrica:semiconductor_furnace",
+  "ingredients": [
+    {"item": "terrafabrica:lithium_concentrate"},
+    {"item": "terrafabrica:coke"}
+  ],
+  "counts": [1, 1],
+  "results": [
+    {"id": "terrafabrica:lithium_ingot", "count": 1}
+  ],
+  "energy": 1800,
+  "ticks": 300,
+  "research": "ev",
+  "min_temperature": 900.0
+}

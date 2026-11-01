@@ -49,7 +49,10 @@ class DataPackIntegrityTest {
             "heavy_rolling_mill", "wire_drawing_machine", "weight_dispenser",
             "air_separation_unit", "water_electrolyzer", "ammonia_synthesizer",
             "ostwald_reactor", "contact_acid_reactor", "chloralkali_cell",
-            "aluminum_electrolyzer", "fertilizer_mixer", "oil_distillation_column");
+            "aluminum_electrolyzer", "fertilizer_mixer", "oil_distillation_column",
+            "semiconductor_furnace", "transistor_assembler", "microchip_fab",
+            "carbon_fiber_plant", "reactor_core", "enrichment_plant",
+            "satellite_launchpad", "fusion_reactor", "ev_charger", "telescope");
 
     private static Path resourceRoot() throws URISyntaxException {
         URL url = DataPackIntegrityTest.class.getClassLoader()

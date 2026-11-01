@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "APA",
+    "MCM",
+    "APA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrafabrica:aluminum_plate"
+    },
+    "P": {
+      "item": "terrafabrica:antenna"
+    },
+    "M": {
+      "item": "terrafabrica:electric_motor"
+    },
+    "C": {
+      "item": "terrafabrica:microchip"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:drone",
+    "count": 1
+  },
+  "research": "satellite"
+}

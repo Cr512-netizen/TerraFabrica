@@ -1,0 +1,19 @@
+{
+  "type": "terrafabrica:enrichment_plant",
+  "group": "enriched_uranium",
+  "ingredients": [
+    {"item": "terrafabrica:uraninite_concentrate"},
+    {"item": "terrafabrica:fluoride_salt"},
+    {"item": "terrafabrica:lead_ingot"}
+  ],
+  "counts": [8, 4, 2],
+  "results": [
+    {"item": "terrafabrica:yellowcake", "count": 4},
+    {"item": "terrafabrica:slag", "count": 2}
+  ],
+  "energy": 20000,
+  "ticks": 1200,
+  "research": "enrichment",
+  "min_temperature": 673,
+  "min_pressure": 101325
+}

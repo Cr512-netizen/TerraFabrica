@@ -1,0 +1,14 @@
+{
+  "type": "terrafabrica:separator",
+  "group": "silica_concentrate",
+  "ingredients": [
+    {"item": "terrafabrica:silica_powder"}
+  ],
+  "counts": [2],
+  "results": [
+    {"item": "terrafabrica:silica_concentrate", "count": 1}
+  ],
+  "energy": 300,
+  "ticks": 80,
+  "research": "semiconductor"
+}

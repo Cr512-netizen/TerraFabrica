@@ -1,0 +1,21 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "DTD",
+    "DTD",
+    "DTD"
+  ],
+  "key": {
+    "D": {
+      "item": "terrafabrica:deuterium"
+    },
+    "T": {
+      "item": "terrafabrica:tritium"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:fusion_fuel",
+    "count": 1
+  },
+  "research": "fusion_reactor"
+}

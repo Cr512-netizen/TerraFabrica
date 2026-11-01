@@ -1,0 +1,18 @@
+{
+  "type": "terrafabrica:carbon_fiber_plant",
+  "group": "carbon_fiber",
+  "ingredients": [
+    {"item": "terrafabrica:coal_concentrate"},
+    {"item": "terrafabrica:ammonia_bottle"},
+    {"item": "terrafabrica:steel_ingot"}
+  ],
+  "counts": [4, 1, 1],
+  "results": [
+    {"item": "terrafabrica:carbon_fiber", "count": 4}
+  ],
+  "energy": 10000,
+  "ticks": 700,
+  "research": "carbon_fiber",
+  "min_temperature": 1273,
+  "min_pressure": 101325
+}

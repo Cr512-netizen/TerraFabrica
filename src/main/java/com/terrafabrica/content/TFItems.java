@@ -44,6 +44,9 @@ public final class TFItems {
         for (String mineral : TFBlocks.ERA2_MINERALS) {
             registerMineral(mineral);
         }
+        for (String mineral : TFBlocks.ERA3_MINERALS) {
+            registerMineral(mineral);
+        }
     }
 
     private static void registerMineral(String mineral) {
@@ -93,6 +96,36 @@ public final class TFItems {
     public static final DeferredItem<Item> NIOBIUM_INGOT = item("niobium_ingot");
     public static final DeferredItem<Item> TITANIUM_INGOT = item("titanium_ingot");
     public static final DeferredItem<Item> VANADIUM_INGOT = item("vanadium_ingot");
+
+    // ------------------------------------------------------------------
+    // Эпоха III — углеродные материалы и электроника
+    // ------------------------------------------------------------------
+
+    public static final DeferredItem<Item> CARBON_FIBER = item("carbon_fiber");     // углеродное волокно
+    public static final DeferredItem<Item> SILICON = item("silicon");               // кремний
+    public static final DeferredItem<Item> SILICA = item("silica");                 // SiO₂
+    public static final DeferredItem<Item> GOLD_INGOT = item("gold_ingot");         // золото (слиток)
+    public static final DeferredItem<Item> ZIRCON = item("zircon");                 // циркон
+    public static final DeferredItem<Item> LITHIUM_INGOT = item("lithium_ingot");   // литий
+    public static final DeferredItem<Item> GERMANIUM = item("germanium");           // германий
+    public static final DeferredItem<Item> INDIUM = item("indium");                 // индий
+    public static final DeferredItem<Item> GALLIUM_ARSENIDE = item("gallium_arsenide"); // GaAs
+    public static final DeferredItem<Item> PHOTOVOLTAIC_CELL = item("photovoltaic_cell"); // солнечная панель
+    public static final DeferredItem<Item> SUPERCONDUCTOR = item("superconductor"); // сверхпроводник
+    public static final DeferredItem<Item> FUSION_FUEL = item("fusion_fuel");       // топливо для термоядра
+    public static final DeferredItem<Item> DEUTERIUM = item("deuterium");           // дейтерий
+    public static final DeferredItem<Item> TRITIUM = item("tritium");               // тритий
+    public static final DeferredItem<Item> NUCLEAR_FUEL_ROD = item("nuclear_fuel_rod"); // твэл
+    public static final DeferredItem<Item> REACTOR_SHIELD = item("reactor_shield"); // экран реактора
+    public static final DeferredItem<Item> SATELLITE_PART = item("satellite_part"); // деталь спутника
+    public static final DeferredItem<Item> EV_BATTERY = item("ev_battery");         // тяговый аккумулятор
+    public static final DeferredItem<Item> SOLAR_PANEL = item("solar_panel");       // солнечная панель
+    public static final DeferredItem<Item> AI_CORE = item("ai_core");               // процессор ИИ
+    public static final DeferredItem<Item> ROBOT = item("robot");                   // робот
+    public static final DeferredItem<Item> DRONE = item("drone");                   // дрон
+    public static final DeferredItem<Item> QUANTUM_COMPUTER = item("quantum_computer"); // квантовый компьютер
+    public static final DeferredItem<Item> TRANSISTOR = item("transistor");             // транзистор
+    public static final DeferredItem<Item> MICROCHIP = item("microchip");               // микрочип
 
     // ------------------------------------------------------------------
     // Промышленные материалы и химикаты

@@ -35,6 +35,7 @@ public final class ResearchTree {
     static {
         buildEra1();
         buildEra2();
+        buildEra3();
     }
 
     public static Collection<ResearchNode> all() {
@@ -115,6 +116,43 @@ public final class ResearchTree {
     // ------------------------------------------------------------------
     // Эпоха II — Промышленная революция
     // ------------------------------------------------------------------
+
+    private static void buildEra3() {
+        // Эпоха III — электроника, углеродные материалы, ядерная, автоматизация
+        node("semiconductor", 3, List.of("tube_computer", "ccgt", "electric_arc_furnace"), 12_000,
+                List.of(cost(TFItems.STEEL_INGOT, 24), cost(TFItems.ALUMINUM_INGOT, 16),
+                        cost(TFItems.concentrate("graphite"), 12)), 26, 2);
+        node("transistor", 3, List.of("semiconductor"), 9_600,
+                List.of(cost(TFItems.STEEL_INGOT, 8), cost(TFItems.concentrate("silica"), 8),
+                        cost(TFItems.concentrate("copper"), 6)), 27, 2);
+        node("microchip", 3, List.of("transistor"), 12_000,
+                List.of(cost(TFItems.concentrate("silica"), 12), cost(TFItems.concentrate("copper"), 8),
+                        cost(TFItems.concentrate("gold"), 4)), 28, 2);
+        node("carbon_fiber", 3, List.of("electric_arc_furnace", "ammonia"), 9_600,
+                List.of(cost(TFItems.STEEL_INGOT, 16), cost(TFItems.concentrate("graphite"), 8),
+                        cost(TFItems.concentrate("coal"), 4)), 26, 4);
+        node("aerospace_alloy", 3, List.of("carbon_fiber", "superalloy"), 14_400,
+                List.of(cost(TFItems.SUPERALLOY_INGOT, 16), cost(TFItems.CARBON_FIBER, 8),
+                        cost(TFItems.TITANIUM_ALLOY_INGOT, 8)), 27, 4);
+        node("nuclear_reactor", 3, List.of("ccgt", "heavy_rolling", "lead"), 18_000,
+                List.of(cost(TFItems.STEEL_INGOT, 32), cost(TFItems.concentrate("uraninite"), 16),
+                        cost(TFItems.concentrate("zircon"), 8)), 28, 4);
+        node("enrichment", 3, List.of("nuclear_reactor", "air_separation"), 12_000,
+                List.of(cost(TFItems.concentrate("uraninite"), 24), cost(TFItems.LEAD_INGOT, 8),
+                        cost(TFItems.concentrate("fluorite"), 8)), 29, 2);
+        node("yellowcake_processing", 3, List.of("enrichment"), 9_600,
+                List.of(cost(TFItems.concentrate("uraninite"), 16), cost(TFItems.concentrate("graphite"), 8),
+                        cost(TFItems.concentrate("sulfur"), 4)), 30, 2);
+        node("satellite", 3, List.of("aerospace_alloy", "microchip", "radio"), 14_400,
+                List.of(cost(TFItems.TITANIUM_ALLOY_INGOT, 24), cost(TFItems.CARBON_FIBER, 12),
+                        cost(TFItems.concentrate("silicon"), 8)), 31, 2);
+        node("ev", 3, List.of("car", "battery", "electric_motor"), 12_000,
+                List.of(cost(TFItems.STEEL_INGOT, 20), cost(TFItems.ALUMINUM_INGOT, 16),
+                        cost(TFItems.CARBON_FIBER, 8)), 32, 0);
+        node("fusion_reactor", 3, List.of("satellite", "nuclear_reactor", "enrichment"), 24_000,
+                List.of(cost(TFItems.SUPERALLOY_INGOT, 32), cost(TFItems.TITANIUM_ALLOY_INGOT, 24),
+                        cost(TFItems.concentrate("lithium"), 16)), 33, 2);
+    }
 
     private static void buildEra2() {
         node("coke_making", 2, List.of("era2_transition"), 1_200,

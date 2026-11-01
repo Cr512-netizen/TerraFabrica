@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:microchip_fab",
+  "ingredients": [
+    {"item": "terrafabrica:gallium_arsenide"},
+    {"item": "terrafabrica:silicon"},
+    {"item": "terrafabrica:gold_ingot"}
+  ],
+  "counts": [1, 2, 1],
+  "results": [
+    {"id": "terrafabrica:photovoltaic_cell", "count": 2}
+  ],
+  "energy": 4000,
+  "ticks": 300,
+  "research": "microchip",
+  "min_temperature": 600.0
+}

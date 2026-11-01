@@ -1,0 +1,13 @@
+{
+  "type": "terrafabrica:calcination_furnace",
+  "ingredients": [
+    {"item": "terrafabrica:silica_concentrate"}
+  ],
+  "results": [
+    {"id": "terrafabrica:silica", "count": 1}
+  ],
+  "energy": 300,
+  "ticks": 300,
+  "research": "semiconductor",
+  "min_temperature": 1200.0
+}

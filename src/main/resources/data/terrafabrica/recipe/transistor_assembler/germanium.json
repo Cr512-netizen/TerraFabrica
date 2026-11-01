@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:transistor_assembler",
+  "group": "transistor",
+  "ingredients": [
+    {"item": "terrafabrica:silicon_concentrate"},
+    {"item": "terrafabrica:germanium"},
+    {"item": "terrafabrica:copper_concentrate"}
+  ],
+  "counts": [2, 1, 1],
+  "results": [
+    {"item": "terrafabrica:transistor", "count": 1}
+  ],
+  "energy": 4000,
+  "ticks": 400,
+  "research": "transistor"
+}

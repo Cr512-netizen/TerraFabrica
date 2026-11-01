@@ -1,0 +1,19 @@
+{
+  "type": "terrafabrica:reactor_core",
+  "group": "fuel_rod",
+  "ingredients": [
+    {"item": "terrafabrica:uraninite_concentrate"},
+    {"item": "terrafabrica:yellowcake"},
+    {"item": "terrafabrica:steel_ingot"},
+    {"item": "terrafabrica:zircon"}
+  ],
+  "counts": [4, 2, 2, 1],
+  "results": [
+    {"item": "terrafabrica:nuclear_fuel_rod", "count": 1}
+  ],
+  "energy": 16000,
+  "ticks": 1000,
+  "research": "nuclear_reactor",
+  "min_temperature": 973,
+  "min_pressure": 101325
+}

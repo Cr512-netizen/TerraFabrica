@@ -1,0 +1,33 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "MAM",
+    "CIC",
+    "WEW"
+  ],
+  "key": {
+    "M": {
+      "item": "terrafabrica:electric_motor"
+    },
+    "A": {
+      "item": "terrafabrica:aluminum_plate"
+    },
+    "C": {
+      "item": "terrafabrica:ai_core"
+    },
+    "I": {
+      "item": "terrafabrica:machine_frame"
+    },
+    "W": {
+      "item": "terrafabrica:copper_wire"
+    },
+    "E": {
+      "item": "terrafabrica:transistor"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:robot",
+    "count": 1
+  },
+  "research": "microchip"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "terrafabrica:fusion_reactor",
+  "group": "deuterium",
+  "ingredients": [
+    {"item": "terrafabrica:superconductor"},
+    {"item": "terrafabrica:iron_catalyst"}
+  ],
+  "counts": [1, 1],
+  "results": [
+    {"item": "terrafabrica:deuterium", "count": 2}
+  ],
+  "energy": 24000,
+  "ticks": 1400,
+  "research": "fusion_reactor",
+  "min_temperature": 1073,
+  "min_pressure": 101325,
+  "fluid_in": {"id": "minecraft:water", "amount": 8000},
+  "fluid_out": {"id": "terrafabrica:steam_low", "amount": 8000}
+}

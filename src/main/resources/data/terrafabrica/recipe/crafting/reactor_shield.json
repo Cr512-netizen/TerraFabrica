@@ -1,0 +1,24 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "LSL",
+    "SPS",
+    "LSL"
+  ],
+  "key": {
+    "L": {
+      "item": "terrafabrica:lithium_ingot"
+    },
+    "S": {
+      "item": "terrafabrica:steel_plate"
+    },
+    "P": {
+      "item": "terrafabrica:lead_ingot"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:reactor_shield",
+    "count": 1
+  },
+  "research": "nuclear_reactor"
+}

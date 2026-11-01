@@ -1,0 +1,13 @@
+{
+  "type": "terrafabrica:crucible_furnace",
+  "ingredients": [
+    {"item": "terrafabrica:gold_concentrate"}
+  ],
+  "results": [
+    {"id": "terrafabrica:gold_ingot", "count": 1}
+  ],
+  "energy": 400,
+  "ticks": 400,
+  "research": "semiconductor",
+  "min_temperature": 1064.0
+}

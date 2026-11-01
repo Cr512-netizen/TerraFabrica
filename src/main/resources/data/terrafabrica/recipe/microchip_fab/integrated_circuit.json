@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:microchip_fab",
+  "group": "microchip",
+  "ingredients": [
+    {"item": "terrafabrica:silicon"},
+    {"item": "terrafabrica:gold_ingot"},
+    {"item": "terrafabrica:copper_concentrate"},
+    {"item": "terrafabrica:transistor"}
+  ],
+  "counts": [4, 1, 2, 2],
+  "results": [
+    {"item": "terrafabrica:microchip", "count": 1}
+  ],
+  "energy": 12000,
+  "ticks": 800,
+  "research": "microchip"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "terrafabrica:crusher",
+  "group": "gold_rock",
+  "ingredients": [
+    {"item": "terrafabrica:gold_rock"}
+  ],
+  "counts": [1],
+  "results": [
+    {"item": "terrafabrica:gold_powder", "count": 2},
+    {"item": "terrafabrica:slag", "count": 1}
+  ],
+  "energy": 400,
+  "ticks": 100,
+  "research": "semiconductor"
+}

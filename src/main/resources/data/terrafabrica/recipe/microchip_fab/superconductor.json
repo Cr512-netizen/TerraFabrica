@@ -1,0 +1,19 @@
+{
+  "type": "terrafabrica:microchip_fab",
+  "group": "superconductor",
+  "ingredients": [
+    {"item": "terrafabrica:silicon"},
+    {"item": "terrafabrica:niobium_ingot"},
+    {"item": "terrafabrica:titanium_alloy_ingot"},
+    {"item": "terrafabrica:microchip"}
+  ],
+  "counts": [4, 2, 2, 1],
+  "results": [
+    {"item": "terrafabrica:superconductor", "count": 1}
+  ],
+  "energy": 24000,
+  "ticks": 1600,
+  "research": "microchip",
+  "min_temperature": 93,
+  "min_pressure": 101325
+}

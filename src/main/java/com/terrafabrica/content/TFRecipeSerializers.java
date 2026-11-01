@@ -50,6 +50,16 @@ public final class TFRecipeSerializers {
     public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_ALUMINUM_ELECTROLYZER = machine("aluminum_electrolyzer");
     public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_FERTILIZER_MIXER = machine("fertilizer_mixer");
     public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_OIL_DISTILLATION_COLUMN = machine("oil_distillation_column");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_SEMICONDUCTOR_FURNACE = machine("semiconductor_furnace");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_TRANSISTOR_ASSEMBLER = machine("transistor_assembler");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_MICROCHIP_FAB = machine("microchip_fab");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_CARBON_FIBER_PLANT = machine("carbon_fiber_plant");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_REACTOR_CORE = machine("reactor_core");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_ENRICHMENT_PLANT = machine("enrichment_plant");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_SATELLITE_LAUNCHPAD = machine("satellite_launchpad");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_FUSION_REACTOR = machine("fusion_reactor");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_EV_CHARGER = machine("ev_charger");
+    public static final DeferredHolder<RecipeSerializer<?>, MachineRecipeSerializer> MACHINE_TELESCOPE = machine("telescope");
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<ResearchShapedRecipe>> RESEARCH_SHAPED =
             TerraFabrica.RECIPE_SERIALIZERS.register("research_shaped", ResearchShapedRecipe.Serializer::new);

@@ -1,0 +1,14 @@
+{
+  "type": "terrafabrica:separator",
+  "group": "uranium_concentrate",
+  "ingredients": [
+    {"item": "terrafabrica:uraninite_powder"}
+  ],
+  "counts": [2],
+  "results": [
+    {"item": "terrafabrica:uraninite_concentrate", "count": 1}
+  ],
+  "energy": 600,
+  "ticks": 120,
+  "research": "nuclear_reactor"
+}

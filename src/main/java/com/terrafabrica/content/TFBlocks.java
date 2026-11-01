@@ -55,12 +55,17 @@ public final class TFBlocks {
             "apatite", "gypsum", "magnesite", "sulfur", "graphite",
             "halite", "carnallite");
 
+    /** Минералы Эпохи III. */
+    public static final List<String> ERA3_MINERALS = List.of(
+            "silica", "zircon", "lithium", "gold", "silicon");
+
     /** Все блоки пород: id → блок. */
     public static final Map<String, DeferredHolder<Block, PorodeBlock>> PORODES = new LinkedHashMap<>();
 
     static {
         List<String> all = new ArrayList<>(ERA1_MINERALS);
         all.addAll(ERA2_MINERALS);
+        all.addAll(ERA3_MINERALS);
         for (String mineral : all) {
             for (PorodeRichness richness : PorodeRichness.values()) {
                 for (boolean deepslate : new boolean[]{false, true}) {
@@ -225,6 +230,21 @@ public final class TFBlocks {
     public static final DeferredBlock<Block> SENSOR_LEVEL = machine("sensor_level");
     public static final DeferredBlock<Block> SENSOR_FLOW = machine("sensor_flow");
     public static final DeferredBlock<Block> VALVE = machine("valve");
+
+    // ------------------------------------------------------------------
+    // Машины Эпохи III — электроника и ядерная
+    // ------------------------------------------------------------------
+
+    public static final DeferredBlock<Block> SEMICONDUCTOR_FURNACE = machine("semiconductor_furnace");
+    public static final DeferredBlock<Block> TRANSISTOR_ASSEMBLER = machine("transistor_assembler");
+    public static final DeferredBlock<Block> MICROCHIP_FAB = machine("microchip_fab");
+    public static final DeferredBlock<Block> CARBON_FIBER_PLANT = machine("carbon_fiber_plant");
+    public static final DeferredBlock<Block> REACTOR_CORE = machine("reactor_core");
+    public static final DeferredBlock<Block> ENRICHMENT_PLANT = machine("enrichment_plant");
+    public static final DeferredBlock<Block> SATELLITE_LAUNCHPAD = machine("satellite_launchpad");
+    public static final DeferredBlock<Block> FUSION_REACTOR = machine("fusion_reactor");
+    public static final DeferredBlock<Block> EV_CHARGER = machine("ev_charger");
+    public static final DeferredBlock<Block> TELESCOPE = machine("telescope");
 
     /** Регистрация одноблочной машины (BE регистрируется в TFBlockEntities с тем же id). */
     private static DeferredBlock<Block> machine(String id) {

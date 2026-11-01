@@ -1,0 +1,15 @@
+{
+  "type": "terrafabrica:semiconductor_furnace",
+  "ingredients": [
+    {"item": "terrafabrica:zircon_concentrate"},
+    {"item": "terrafabrica:coke"}
+  ],
+  "counts": [2, 1],
+  "results": [
+    {"id": "terrafabrica:indium", "count": 1}
+  ],
+  "energy": 1200,
+  "ticks": 300,
+  "research": "transistor",
+  "min_temperature": 700.0
+}

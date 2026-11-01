@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:ev_charger",
+  "group": "ev_battery",
+  "ingredients": [
+    {"item": "terrafabrica:carbon_fiber"},
+    {"item": "terrafabrica:superconductor"},
+    {"item": "terrafabrica:lithium_ingot"},
+    {"item": "terrafabrica:lead_ingot"}
+  ],
+  "counts": [4, 2, 4, 4],
+  "results": [
+    {"item": "terrafabrica:ev_battery", "count": 1}
+  ],
+  "energy": 18000,
+  "ticks": 1200,
+  "research": "ev"
+}

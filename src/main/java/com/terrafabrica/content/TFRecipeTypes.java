@@ -65,6 +65,18 @@ public final class TFRecipeTypes {
     public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> FERTILIZER_MIXER = type("fertilizer_mixer");
     public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> OIL_DISTILLATION_COLUMN = type("oil_distillation_column");
 
+    // Эпоха III — электроника, углерод, ядерная, автоматизация
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> SEMICONDUCTOR_FURNACE = type("semiconductor_furnace");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> TRANSISTOR_ASSEMBLER = type("transistor_assembler");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> MICROCHIP_FAB = type("microchip_fab");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> CARBON_FIBER_PLANT = type("carbon_fiber_plant");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> REACTOR_CORE = type("reactor_core");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> ENRICHMENT_PLANT = type("enrichment_plant");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> SATELLITE_LAUNCHPAD = type("satellite_launchpad");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> FUSION_REACTOR = type("fusion_reactor");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> EV_CHARGER = type("ev_charger");
+    public static final DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> TELESCOPE = type("telescope");
+
     private static DeferredHolder<RecipeType<?>, RecipeType<MachineRecipe>> type(String id) {
         RecipeType<MachineRecipe> type = RecipeType.simple(TerraFabrica.id(id));
         BY_ID.put(id, type);

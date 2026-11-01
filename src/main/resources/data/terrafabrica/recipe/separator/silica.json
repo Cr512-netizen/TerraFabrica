@@ -1,0 +1,15 @@
+{
+  "type": "terrafabrica:separator",
+  "group": "silica",
+  "ingredients": [
+    {"item": "terrafabrica:silica_rock"}
+  ],
+  "counts": [1],
+  "results": [
+    {"item": "terrafabrica:silica_powder", "count": 2},
+    {"item": "terrafabrica:slag", "count": 1}
+  ],
+  "energy": 400,
+  "ticks": 100,
+  "research": "semiconductor"
+}

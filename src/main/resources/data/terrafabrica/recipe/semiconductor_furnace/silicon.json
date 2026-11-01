@@ -1,0 +1,17 @@
+{
+  "type": "terrafabrica:semiconductor_furnace",
+  "group": "semiconductor",
+  "ingredients": [
+    {"item": "terrafabrica:silica_concentrate"},
+    {"item": "terrafabrica:coke"}
+  ],
+  "counts": [2, 1],
+  "results": [
+    {"item": "terrafabrica:silicon", "count": 2}
+  ],
+  "energy": 8000,
+  "ticks": 600,
+  "research": "semiconductor",
+  "min_temperature": 2073,
+  "min_pressure": 101325
+}

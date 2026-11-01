@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:microchip_fab",
+  "ingredients": [
+    {"item": "terrafabrica:microchip"},
+    {"item": "terrafabrica:superconductor"},
+    {"item": "terrafabrica:copper_wire"},
+    {"item": "terrafabrica:gold_ingot"}
+  ],
+  "counts": [4, 2, 4, 2],
+  "results": [
+    {"id": "terrafabrica:ai_core", "count": 1}
+  ],
+  "energy": 20000,
+  "ticks": 800,
+  "research": "microchip"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "terrafabrica:separator",
+  "group": "gold_concentrate",
+  "ingredients": [
+    {"item": "terrafabrica:gold_powder"}
+  ],
+  "counts": [2],
+  "results": [
+    {"item": "terrafabrica:gold_concentrate", "count": 1}
+  ],
+  "energy": 500,
+  "ticks": 100,
+  "research": "semiconductor"
+}

@@ -60,11 +60,11 @@ public class TFGameTests {
     // Реестры и породы
     // ------------------------------------------------------------------
 
-    /** Все 162 породы зарегистрированы как блоки вместе с предметами. */
+    /** Все 192 породы зарегистрированы как блоки вместе с предметами. */
     @GameTest(template = PLATFORM)
     public void porodesRegistered(GameTestHelper helper) {
-        check(helper, TFBlocks.PORODES.size() == 162,
-                "пород в реестре: " + TFBlocks.PORODES.size() + " (ожидалось 162)");
+        check(helper, TFBlocks.PORODES.size() == 192,
+                "пород в реестре: " + TFBlocks.PORODES.size() + " (ожидалось 192)");
 
         List<String> minerals = new ArrayList<>();
         int withBlock = 0;
@@ -82,9 +82,9 @@ public class TFGameTests {
                 minerals.add(mineral);
             }
         }
-        check(helper, withBlock == 162, "блоков пород в реестре: " + withBlock);
-        check(helper, withItem == 162, "предметов пород в реестре: " + withItem);
-        check(helper, minerals.size() == 27, "минералов: " + minerals.size() + " (ожидалось 27)");
+        check(helper, withBlock == 192, "блоков пород в реестре: " + withBlock);
+        check(helper, withItem == 192, "предметов пород в реестре: " + withItem);
+        check(helper, minerals.size() == 32, "минералов: " + minerals.size() + " (ожидалось 32)");
         helper.succeed();
     }
 

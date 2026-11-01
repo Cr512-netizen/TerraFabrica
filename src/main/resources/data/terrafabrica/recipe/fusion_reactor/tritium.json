@@ -1,0 +1,13 @@
+{
+  "type": "terrafabrica:fusion_reactor",
+  "ingredients": [
+    {"item": "terrafabrica:lithium_ingot"}
+  ],
+  "results": [
+    {"id": "terrafabrica:tritium", "count": 1}
+  ],
+  "energy": 20000,
+  "ticks": 600,
+  "research": "fusion_reactor",
+  "min_temperature": 1073.0
+}

@@ -1,0 +1,27 @@
+{
+  "type": "terrafabrica:research_shaped",
+  "pattern": [
+    "PPP",
+    "GSG",
+    "AAA"
+  ],
+  "key": {
+    "P": {
+      "item": "terrafabrica:photovoltaic_cell"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "S": {
+      "item": "terrafabrica:steel_plate"
+    },
+    "A": {
+      "item": "terrafabrica:aluminum_plate"
+    }
+  },
+  "result": {
+    "id": "terrafabrica:solar_panel",
+    "count": 1
+  },
+  "research": "microchip"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "terrafabrica:separator",
+  "group": "zircon_concentrate",
+  "ingredients": [
+    {"item": "terrafabrica:zircon_powder"}
+  ],
+  "counts": [2],
+  "results": [
+    {"item": "terrafabrica:zircon_concentrate", "count": 1}
+  ],
+  "energy": 600,
+  "ticks": 120,
+  "research": "nuclear_reactor"
+}

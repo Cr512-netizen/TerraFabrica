@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:microchip_fab",
+  "ingredients": [
+    {"item": "terrafabrica:silicon"},
+    {"item": "terrafabrica:indium"},
+    {"item": "terrafabrica:gold_ingot"}
+  ],
+  "counts": [2, 1, 1],
+  "results": [
+    {"id": "terrafabrica:gallium_arsenide", "count": 1}
+  ],
+  "energy": 5000,
+  "ticks": 400,
+  "research": "microchip",
+  "min_temperature": 1238.0
+}

@@ -1,0 +1,16 @@
+{
+  "type": "terrafabrica:satellite_launchpad",
+  "ingredients": [
+    {"item": "terrafabrica:aluminum_plate"},
+    {"item": "terrafabrica:photovoltaic_cell"},
+    {"item": "terrafabrica:antenna"},
+    {"item": "terrafabrica:microchip"}
+  ],
+  "counts": [4, 2, 2, 2],
+  "results": [
+    {"id": "terrafabrica:satellite_part", "count": 1}
+  ],
+  "energy": 15000,
+  "ticks": 600,
+  "research": "satellite"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "terrafabrica:semiconductor_furnace",
+  "ingredients": [
+    {"item": "terrafabrica:zircon_concentrate"},
+    {"item": "terrafabrica:coke"}
+  ],
+  "counts": [1, 1],
+  "results": [
+    {"id": "terrafabrica:zircon", "count": 1}
+  ],
+  "energy": 2000,
+  "ticks": 300,
+  "research": "semiconductor",
+  "min_temperature": 1500.0
+}

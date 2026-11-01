@@ -1,0 +1,15 @@
+{
+  "type": "terrafabrica:semiconductor_furnace",
+  "ingredients": [
+    {"item": "terrafabrica:silica"},
+    {"item": "terrafabrica:coke"}
+  ],
+  "counts": [1, 2],
+  "results": [
+    {"id": "terrafabrica:germanium", "count": 1}
+  ],
+  "energy": 1500,
+  "ticks": 400,
+  "research": "transistor",
+  "min_temperature": 938.0
+}
