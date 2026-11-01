@@ -13,9 +13,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Радио (2×2×3): ламповый передатчик с антенной. Изменение редстоун-сигнала
- * ретранслируется всем радиостанциям в радиусе 10 000 блоков (упрощение:
- * без несущей частоты и модуляции — см. docs/DESIGN_DECISIONS.md).
+ * Радио (2×2×3): ламповый передатчик с антенной.
+ * Сканирует ±250 × ±64 × ±250 блоков (реально), ретранслирует
+ * сигнал всем радиостанциям в этой области (упрощение: без несущей/модуляции).
  */
 public class RadioBlockEntity extends AbstractMachineBlockEntity {
 
