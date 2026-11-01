@@ -26,8 +26,8 @@
 
 | Машина | Название | Тип | Рецептов | Энергия цикла | Время цикла | Исследования |
 | --- | --- | --- | --- | --- | --- | --- |
-| `crusher` | Дробилка | машина с рецептами | 31 | 50 кДж | 5 с | `ore_enrichment` |
-| `separator` | Сепаратор | машина с рецептами | 27 | 50 кДж | 5 с | `ore_enrichment` |
+| `crusher` | Дробилка | машина с рецептами | 32 | 400 Дж – 50 кДж | 5 с | `ore_enrichment`, `semiconductor` |
+| `separator` | Сепаратор | машина с рецептами | 32 | 300 Дж – 50 кДж | 4 с – 6 с | `nuclear_reactor`, `ore_enrichment`, `semiconductor` |
 
 ## Печи и металлургия
 
@@ -37,13 +37,13 @@
 | `bloomery` | Горн с мехами | машина с рецептами | 4 | — | 30 с – 40 с | `bronze_metallurgy`, `copper_metallurgy`, `iron_metallurgy` |
 | `small_blast_furnace` | Малая домна | машина с рецептами | 2 | — | 30 с | `iron_metallurgy` |
 | `puddling_furnace` | Пудлинговая печь | машина с рецептами | 1 | — | 30 с | `iron_metallurgy` |
-| `crucible_furnace` | Тигельная печь | машина с рецептами | 6 | — | 20 с – 30 с | `bronze_metallurgy`, `chemistry_soda`, `chemistry_special_glass`, `era2_transition` |
-| `calcination_furnace` | Печь прокалки | машина с рецептами | 1 | — | 20 с | `chemistry_soda` |
+| `crucible_furnace` | Тигельная печь | машина с рецептами | 7 | 400 Дж | 20 с – 30 с | `bronze_metallurgy`, `chemistry_soda`, `chemistry_special_glass`, `era2_transition`, `semiconductor` |
+| `calcination_furnace` | Печь прокалки | машина с рецептами | 2 | 300 Дж | 15 с – 20 с | `chemistry_soda`, `semiconductor` |
 | `pyrite_roaster` | Печь обжига пирита | машина с рецептами | 1 | — | 20 с | `chemistry_sulfuric` |
 | `coke_oven` | Коксовая печь | машина с рецептами | 1 | — | 45 с | `coke_making` |
-| `blast_furnace` | Домна на коксе | машина с рецептами | 2 | — | 45 с – 60 с | `blast_furnace_coke` |
+| `blast_furnace` | Домна на коксе | машина с рецептами | 4 | — | 30 с – 60 с | `blast_furnace_coke`, `electric_arc_furnace`, `era2_transition` |
 | `open_hearth_furnace` | Мартеновская печь | машина с рецептами | 1 | — | 60 с | `open_hearth` |
-| `electric_arc_furnace` | Электродуговая печь | машина с рецептами | 1 | — | 30 с | `electric_arc_furnace` |
+| `electric_arc_furnace` | Электродуговая печь | машина с рецептами | 5 | — | 15 с – 30 с | `electric_arc_furnace` |
 | `bessemer_converter` | Бессемеровский конвертер | машина с рецептами | 1 | — | 1080 с | `bessemer` |
 
 ## Приводы и передача
@@ -202,4 +202,4 @@
 взрывается (если включены аварии). Дизельный локомотив воду не расходует,
 но требует канистру (12 000 мБ).
 
-Всего рецептов в перечисленных машинах: **121**.
+Всего рецептов в перечисленных машинах: **135**.

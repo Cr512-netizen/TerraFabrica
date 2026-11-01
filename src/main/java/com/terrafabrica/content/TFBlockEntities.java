@@ -48,6 +48,7 @@ import com.terrafabrica.content.era2.TubeComputerBlockEntity;
 import com.terrafabrica.content.era2.ValveBlockEntity;
 import com.terrafabrica.content.era2.WeightDispenserBlockEntity;
 import com.terrafabrica.content.era2.WireDrawingMachineBlockEntity;
+import com.terrafabrica.content.era3.Era3MachineBlockEntity;
 import com.terrafabrica.content.shared.power.CableBlockEntity;
 import com.terrafabrica.content.shared.power.CableTier;
 import com.terrafabrica.content.shared.power.CircuitBreakerBlockEntity;
@@ -232,6 +233,28 @@ public final class TFBlockEntities {
             return BlockEntityType.Builder.of(factory, resolved).build(null);
         });
     }
+
+    // Эпоха III — электроника, углерод, ядерная, автоматизация
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> SEMICONDUCTOR_FURNACE =
+            register("semiconductor_furnace", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.SEMICONDUCTOR_FURNACE.get(), pos, state, Era3MachineBlockEntity.Kind.SEMICONDUCTOR), TFBlocks.SEMICONDUCTOR_FURNACE);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> TRANSISTOR_ASSEMBLER =
+            register("transistor_assembler", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.TRANSISTOR_ASSEMBLER.get(), pos, state, Era3MachineBlockEntity.Kind.TRANSISTOR), TFBlocks.TRANSISTOR_ASSEMBLER);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> MICROCHIP_FAB =
+            register("microchip_fab", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.MICROCHIP_FAB.get(), pos, state, Era3MachineBlockEntity.Kind.MICROCHIP), TFBlocks.MICROCHIP_FAB);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> CARBON_FIBER_PLANT =
+            register("carbon_fiber_plant", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.CARBON_FIBER_PLANT.get(), pos, state, Era3MachineBlockEntity.Kind.CARBON_FIBER), TFBlocks.CARBON_FIBER_PLANT);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> REACTOR_CORE =
+            register("reactor_core", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.REACTOR_CORE.get(), pos, state, Era3MachineBlockEntity.Kind.REACTOR_CORE), TFBlocks.REACTOR_CORE);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> ENRICHMENT_PLANT =
+            register("enrichment_plant", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.ENRICHMENT_PLANT.get(), pos, state, Era3MachineBlockEntity.Kind.ENRICHMENT), TFBlocks.ENRICHMENT_PLANT);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> SATELLITE_LAUNCHPAD =
+            register("satellite_launchpad", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.SATELLITE_LAUNCHPAD.get(), pos, state, Era3MachineBlockEntity.Kind.SATELLITE), TFBlocks.SATELLITE_LAUNCHPAD);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> FUSION_REACTOR =
+            register("fusion_reactor", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.FUSION_REACTOR.get(), pos, state, Era3MachineBlockEntity.Kind.FUSION), TFBlocks.FUSION_REACTOR);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> EV_CHARGER =
+            register("ev_charger", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.EV_CHARGER.get(), pos, state, Era3MachineBlockEntity.Kind.EV_CHARGER), TFBlocks.EV_CHARGER);
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Era3MachineBlockEntity>> TELESCOPE =
+            register("telescope", (pos, state) -> new Era3MachineBlockEntity(TFBlockEntities.TELESCOPE.get(), pos, state, Era3MachineBlockEntity.Kind.TELESCOPE), TFBlocks.TELESCOPE);
 
     /** Инициализация (регистрация выполняется в статических полях выше). */
     public static void init() {
