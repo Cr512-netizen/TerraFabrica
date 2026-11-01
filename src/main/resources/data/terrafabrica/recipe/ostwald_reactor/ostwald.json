@@ -2,7 +2,7 @@
   "type": "terrafabrica:ostwald_reactor",
   "group": "ostwald",
   "ingredients": [
-    {"item": "terrafabrica:platinum_rhodium_gauze"}
+    {"item": "terrafabrica:platinum_rhodium_net"}
   ],
   "results": [],
   "energy": 1000,

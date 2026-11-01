@@ -7,7 +7,7 @@
   "results": [],
   "energy": 1000,
   "ticks": 100,
-  "research": "electrolysis",
+  "research": "water_electrolysis",
   "fluid_in": {
     "id": "minecraft:water",
     "amount": 100

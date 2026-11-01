@@ -5,7 +5,7 @@
   "results": [],
   "energy": 2000,
   "ticks": 600,
-  "research": "ammonia_synthesis",
+  "research": "ammonia",
   "fluid_in": {
     "id": "terrafabrica:nitrogen",
     "amount": 1

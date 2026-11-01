@@ -5,7 +5,7 @@
   "results": [],
   "energy": 0,
   "ticks": 200,
-  "research": "oil_distillation",
+  "research": "oil_refining",
   "fluid_in": {
     "id": "terrafabrica:crude_oil",
     "amount": 10

@@ -7,7 +7,7 @@
   "results": [],
   "energy": 1000,
   "ticks": 400,
-  "research": "sulfuric_acid_contact",
+  "research": "contact_sulfuric",
   "fluid_in": {
     "id": "terrafabrica:sulfur_dioxide",
     "amount": 2

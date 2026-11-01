@@ -2,14 +2,14 @@
   "type": "terrafabrica:aluminum_electrolyzer",
   "group": "aluminum",
   "ingredients": [
-    {"item": "terrafabrica:alumina"}
+    {"item": "terrafabrica:bauxite_rock"}
   ],
   "results": [
     {"item": "terrafabrica:aluminum_ingot", "count": 1}
   ],
   "energy": 4500,
   "ticks": 600,
-  "research": "aluminum_electrolysis",
+  "research": "aluminum",
   "fluid_out": {
     "id": "terrafabrica:fluoride_salt",
     "amount": 1
